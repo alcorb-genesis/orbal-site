@@ -333,7 +333,7 @@ export default function OrbalLanding() {
               { icon: "🇩🇪", title: "Infrastructure 100% européenne", desc: "Hetzner Online, Allemagne. Juridiction UE, RGPD strict. Zéro exposition au CLOUD Act américain. Vos données ne quittent jamais l'Europe." },
               { icon: "🗑", title: "Suppression serveur réelle", desc: "Vos messages sont supprimés de nos serveurs dès livraison confirmée. Pas masqués côté client — effacés. Vérifiable techniquement." },
               { icon: "💜", title: "Modèle économique transparent", desc: "Vous savez ce que vous payez et pourquoi. Pas de données vendues, pas de publicité. Un tarif clair, une prestation claire." },
-              { icon: "🕊", title: "3 messages gratuits à vie", desc: "Tout le monde peut envoyer 3 messages sans payer, sans inscription complète. Parce qu'une personne en danger doit pouvoir dire où elle est." },
+              { icon: "🕊", title: "3 messages/ jour gratuits à vie", desc: "Tout le monde peut envoyer 3 messages par jour sans payer, sans inscription complète. Parce qu'une personne en danger doit pouvoir dire où elle est." },
               { icon: "🔐", title: "Signal Protocol + Local-First", desc: "Chiffrement de bout en bout éprouvé depuis 2013. Vos données stockées sur votre appareil, synchronisées chiffrées sur nos serveurs. Vous possédez vos données au sens littéral." },
             ].map((f, i) => (
               <div className="feature-card" key={i}>
@@ -631,7 +631,7 @@ export default function OrbalLanding() {
           <p>Raison sociale : Alcorb<br />
           Forme juridique : Auto-entrepreneur<br />
           Fondateur : Alexis Bertrand (EL) — Auto-entrepreneur<br />
-          SIRET : En cours d'attribution (TCO Paris)<br />
+          SIRET : 103 664 496 00017<br />
           Domiciliation : HelloDom, Paris 15e arrondissement<br />
           Email : contact@orbal.app</p>
         </div>
