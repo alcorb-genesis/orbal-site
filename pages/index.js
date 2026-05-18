@@ -283,7 +283,7 @@ export default function OrbalLanding() {
           </button>
         </div>
         <div className="hero-stats">
-          <div className="stat"><div className="stat-n serif">E2EE</div><div className="stat-l">Signal Protocol</div></div>
+          <div className="stat"><div className="stat-n serif">E2EE</div><div className="stat-l">Orbal Protocol</div></div>
           <div className="stat"><div className="stat-n serif">🇩🇪</div><div className="stat-l">Hetzner Allemagne</div></div>
           <div className="stat"><div className="stat-n serif">0</div><div className="stat-l">Numéro requis</div></div>
           <div className="stat"><div className="stat-n serif">3</div><div className="stat-l">Messages gratuits</div></div>
@@ -326,15 +326,15 @@ export default function OrbalLanding() {
         <div className="inner" style={{paddingTop:"6rem",paddingBottom:"6rem"}}>
           <div className="section-label">Ce qui nous différencie</div>
           <h2 className="section-title serif">6 piliers que<br /><em>personne d'autre</em> ne réunit</h2>
-          <p className="section-lead">Signal est excellent. WhatsApp est populaire. Orbal est le seul à combiner tous ces éléments simultanément.</p>
+          <p className="section-lead">Signal est excellent. WhatsApp est populaire. Orbal est le seul à supprimer ce qui part plutôt que de protéger ce qui reste.</p>
           <div className="features-grid">
             {[
-              { icon: "🚫", title: "Pas de numéro de téléphone", desc: "Une adresse email ou un pseudonyme suffisent. Signal exige votre numéro — Orbal, non. Votre identité vous appartient." },
+              { icon: "🚫", title: "Pas de numéro de téléphone", desc: "Une adresse email ou un pseudonyme suffisent. Les autres exigent votre numéro — Orbal, non. Votre identité vous appartient." },
               { icon: "🇩🇪", title: "Infrastructure 100% européenne", desc: "Hetzner Online, Allemagne. Juridiction UE, RGPD strict. Zéro exposition au CLOUD Act américain. Vos données ne quittent jamais l'Europe." },
               { icon: "🗑", title: "Suppression serveur réelle", desc: "Vos messages sont supprimés de nos serveurs dès livraison confirmée. Pas masqués côté client — effacés. Vérifiable techniquement." },
               { icon: "💜", title: "Modèle économique transparent", desc: "Vous savez ce que vous payez et pourquoi. Pas de données vendues, pas de publicité. Un tarif clair, une prestation claire." },
               { icon: "🕊", title: "3 messages/ jour gratuits à vie", desc: "Tout le monde peut envoyer 3 messages par jour sans payer, sans inscription complète. Parce qu'une personne en danger doit pouvoir dire où elle est." },
-              { icon: "🔐", title: "Signal Protocol + Local-First", desc: "Chiffrement de bout en bout éprouvé depuis 2013. Vos données stockées sur votre appareil, synchronisées chiffrées sur nos serveurs. Vous possédez vos données au sens littéral." },
+              { icon: "🔐", title: "Orbal Protocol — Chiffrement éphémère", desc: "ECDH P-256 + AES-256-GCM + HKDF. Vos messages disparaissent après lecture. Aucune archive. Aucune trace. Vous possédez vos données — et leur absence." },
             ].map((f, i) => (
               <div className="feature-card" key={i}>
                 <div className="feature-icon">{f.icon}</div>
@@ -519,7 +519,7 @@ export default function OrbalLanding() {
 
           <div className="security-grid">
             {[
-              { title: "Signal Protocol — chiffrement éprouvé", desc: "Protocole open-source utilisé par Signal, WhatsApp et Google Messages. Audité publiquement depuis 2013. Perfect Forward Secrecy : chaque message a une clé unique. Aucune backdoor connue.", law: "Chiffrement de bout en bout · Double Ratchet Algorithm" },
+              { title: "Orbal Protocol — sécurité par l'absence", desc: "ECDH P-256 + AES-256-GCM + HKDF + HMAC. Clés éphémères par message. Double Ratchet. Un message qui n'existe plus ne peut pas être compromis.", law: "Chiffrement de bout en bout · Orbal Protocol v3" },
               { title: "Arrêt CEDH Podchasov c. Russie", desc: "La Cour européenne des droits de l'homme a statué le 17 janvier 2024 qu'obliger un service à affaiblir son chiffrement E2EE viole l'article 8 (vie privée). Orbal s'appuie sur cette jurisprudence.", law: "CEDH, 17 jan. 2024, Podchasov c. Russie, req. n°33696/19" },
               { title: "RGPD — Règlement européen", desc: "Vos données personnelles sont traitées conformément au Règlement UE 2016/679. Droit d'accès, de rectification, de suppression. Délégué à la protection des données disponible sur demande.", law: "Règlement (UE) 2016/679 du 27 avril 2016" },
               { title: "Hébergement hors juridiction US", desc: "Nos serveurs sont hébergés chez Hetzner Online GmbH en Allemagne. Aucune exposition au CLOUD Act américain (50 U.S.C. § 1881). Une injonction étrangère ne peut pas atteindre vos données.", law: "Hetzner Online GmbH · FSN1 · Falkenstein, Allemagne" },
@@ -561,7 +561,7 @@ export default function OrbalLanding() {
             <p>En accédant au service, l'utilisateur reconnaît avoir pris connaissance des présentes CGU et les accepter sans réserve. Les CGU peuvent évoluer ; l'utilisateur sera informé de tout changement substantiel.</p></>
           )},
           { title: "Article 2 — Description du service", content: (
-            <><p>Orbal est un service de messagerie instantanée chiffrée de bout en bout (E2EE), utilisant le Signal Protocol. Le service permet :</p>
+            <><p>Orbal est un service de messagerie instantanée chiffrée de bout en bout (E2EE), utilisant Orbal Protocol v3 (ECDH P-256 + AES-256-GCM). Le service permet :</p>
             <ul>
               <li>L'envoi et la réception de messages texte chiffrés (brefs, standards, longs)</li>
               <li>L'envoi de fichiers jusqu'à 25 MB</li>
@@ -600,7 +600,7 @@ export default function OrbalLanding() {
           )},
           { title: "Article 6 — Propriété intellectuelle", content: (
             <><p>La marque Orbal, le logo (corbeau stylisé), l'interface et le code propriétaire d'Orbal sont la propriété exclusive d'Alcorb. Toute reproduction, représentation ou utilisation sans autorisation préalable est interdite.</p>
-            <p>Le Signal Protocol utilisé est open-source et soumis à sa propre licence. L'architecture Local-First et les composants open-source utilisés sont soumis à leurs licences respectives.</p></>
+            <p>Orbal Protocol v3 est développé par Alcorb. Les composants open-source utilisés sont soumis à leurs licences respectives.</p></>
           )},
           { title: "Article 7 — Responsabilités et limitations", content: (
             <><p>Alcorb met tout en œuvre pour assurer la disponibilité du service (objectif 99,5% de disponibilité mensuelle), mais ne peut garantir une disponibilité sans interruption.</p>
