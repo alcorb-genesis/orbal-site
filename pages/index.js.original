@@ -284,7 +284,7 @@ export default function OrbalLanding() {
         </div>
         <div className="hero-stats">
           <div className="stat"><div className="stat-n serif">E2EE</div><div className="stat-l">Orbal Protocol</div></div>
-          <div className="stat"><div className="stat-n serif">🇪🇺</div><div className="stat-l">Union Européenne</div></div>
+          <div className="stat"><div className="stat-n serif">🇩🇪</div><div className="stat-l">Hetzner Allemagne</div></div>
           <div className="stat"><div className="stat-n serif">0</div><div className="stat-l">Numéro requis</div></div>
           <div className="stat"><div className="stat-n serif">3</div><div className="stat-l">Messages gratuits</div></div>
         </div>
@@ -330,11 +330,11 @@ export default function OrbalLanding() {
           <div className="features-grid">
             {[
               { icon: "🚫", title: "Pas de numéro de téléphone", desc: "Une adresse email ou un pseudonyme suffisent. Les autres exigent votre numéro — Orbal, non. Votre identité vous appartient." },
-              { icon: "🇪🇺", title: "Infrastructure 100% européenne", desc: "Serveurs en Union Européenne. Juridiction UE, RGPD strict. Zéro exposition au CLOUD Act américain. Vos données ne quittent jamais l'Europe." },
+              { icon: "🇩🇪", title: "Infrastructure 100% européenne", desc: "Hetzner Online, Allemagne. Juridiction UE, RGPD strict. Zéro exposition au CLOUD Act américain. Vos données ne quittent jamais l'Europe." },
               { icon: "🗑", title: "Suppression serveur réelle", desc: "Vos messages sont supprimés de nos serveurs dès livraison confirmée. Pas masqués côté client — effacés. Vérifiable techniquement." },
               { icon: "💜", title: "Modèle économique transparent", desc: "Vous savez ce que vous payez et pourquoi. Pas de données vendues, pas de publicité. Un tarif clair, une prestation claire." },
               { icon: "🕊", title: "3 messages/ jour gratuits à vie", desc: "Tout le monde peut envoyer 3 messages par jour sans payer, sans inscription complète. Parce qu'une personne en danger doit pouvoir dire où elle est." },
-              { icon: "🔐", title: "Orbal Protocol — Chiffrement éphémère", desc: "Chiffrement de bout en bout, état de l'art. Vos messages disparaissent après lecture. Aucune archive. Aucune trace. Vous possédez vos données — et leur absence." },
+              { icon: "🔐", title: "Orbal Protocol — Chiffrement éphémère", desc: "ECDH P-256 + AES-256-GCM + HKDF. Vos messages disparaissent après lecture. Aucune archive. Aucune trace. Vous possédez vos données — et leur absence." },
             ].map((f, i) => (
               <div className="feature-card" key={i}>
                 <div className="feature-icon">{f.icon}</div>
@@ -519,12 +519,12 @@ export default function OrbalLanding() {
 
           <div className="security-grid">
             {[
-              { title: "Orbal Protocol — sécurité par l'absence", desc: "Chiffrement de bout en bout. Un message qui n'existe plus ne peut pas être compromis.", law: "Chiffrement de bout en bout · Orbal Protocol v3" },
+              { title: "Orbal Protocol — sécurité par l'absence", desc: "ECDH P-256 + AES-256-GCM + HKDF + HMAC. Clés éphémères par message. Double Ratchet. Un message qui n'existe plus ne peut pas être compromis.", law: "Chiffrement de bout en bout · Orbal Protocol v3" },
               { title: "Arrêt CEDH Podchasov c. Russie", desc: "La Cour européenne des droits de l'homme a statué le 17 janvier 2024 qu'obliger un service à affaiblir son chiffrement E2EE viole l'article 8 (vie privée). Orbal s'appuie sur cette jurisprudence.", law: "CEDH, 17 jan. 2024, Podchasov c. Russie, req. n°33696/19" },
               { title: "RGPD — Règlement européen", desc: "Vos données personnelles sont traitées conformément au Règlement UE 2016/679. Droit d'accès, de rectification, de suppression. Délégué à la protection des données disponible sur demande.", law: "Règlement (UE) 2016/679 du 27 avril 2016" },
-              { title: "Hébergement hors juridiction US", desc: "Nos serveurs sont hébergés en Union Européenne. Aucune exposition au CLOUD Act américain (50 U.S.C. § 1881). Une injonction étrangère ne peut pas atteindre vos données.", law: "Hébergement en Union Européenne · Juridiction UE" },
+              { title: "Hébergement hors juridiction US", desc: "Nos serveurs sont hébergés chez Hetzner Online GmbH en Allemagne. Aucune exposition au CLOUD Act américain (50 U.S.C. § 1881). Une injonction étrangère ne peut pas atteindre vos données.", law: "Hetzner Online GmbH · FSN1 · Falkenstein, Allemagne" },
               { title: "Loi Informatique et Libertés", desc: "Orbal respecte la loi française n°78-17 du 6 janvier 1978 modifiée. Vos droits sont garantis et exercables à tout moment. Aucune donnée n'est transmise à des tiers sans votre consentement explicite.", law: "Loi n°78-17 du 6 janvier 1978 · CNIL" },
-              { title: "Architecture Local-First", desc: "Vos clés cryptographiques sont stockées de façon sécurisée sur votre appareil (Keychain iOS / Keystore Android). Vos messages sont éphémères : rien n'est archivé.", law: "Stockage sécurisé système · Messages éphémères" },
+              { title: "Architecture Local-First", desc: "Vos messages, votre historique et vos clés cryptographiques sont stockés sur votre appareil, dans une base de données SQLCipher chiffrée. Sans votre code PIN, personne ne peut y accéder.", law: "SQLCipher · Secure Enclave / TEE · AES-256" },
             ].map((s, i) => (
               <div className="security-item" key={i}>
                 <h3 className="serif">{s.title}</h3>
@@ -561,7 +561,7 @@ export default function OrbalLanding() {
             <p>En accédant au service, l'utilisateur reconnaît avoir pris connaissance des présentes CGU et les accepter sans réserve. Les CGU peuvent évoluer ; l'utilisateur sera informé de tout changement substantiel.</p></>
           )},
           { title: "Article 2 — Description du service", content: (
-            <><p>Orbal est un service de messagerie instantanée chiffrée de bout en bout (E2EE), utilisant Orbal Protocol v3 (chiffrement de bout en bout). Le service permet :</p>
+            <><p>Orbal est un service de messagerie instantanée chiffrée de bout en bout (E2EE), utilisant Orbal Protocol v3 (ECDH P-256 + AES-256-GCM). Le service permet :</p>
             <ul>
               <li>L'envoi et la réception de messages texte chiffrés (brefs, standards, longs)</li>
               <li>L'envoi de fichiers jusqu'à 25 MB</li>
@@ -596,7 +596,7 @@ export default function OrbalLanding() {
               <li>Droit d'opposition au traitement</li>
             </ul>
             <p>Ces droits s'exercent par email à contact@orbal.app. Alcorb s'engage à répondre dans un délai de 30 jours.</p>
-            <p>Les données stockées sur nos serveurs en Union Européenne sont chiffrées et ne peuvent être lues par aucun employé d'Alcorb. Les métadonnées de connexion sont conservées pour une durée maximale de 12 mois, conformément à la loi.</p></>
+            <p>Les données stockées sur les serveurs Hetzner (Allemagne) sont chiffrées et ne peuvent être lues par aucun employé d'Alcorb. Les métadonnées de connexion sont conservées pour une durée maximale de 12 mois, conformément à la loi.</p></>
           )},
           { title: "Article 6 — Propriété intellectuelle", content: (
             <><p>La marque Orbal, le logo (corbeau stylisé), l'interface et le code propriétaire d'Orbal sont la propriété exclusive d'Alcorb. Toute reproduction, représentation ou utilisation sans autorisation préalable est interdite.</p>
@@ -709,7 +709,7 @@ export default function OrbalLanding() {
 
         <div className="article">
           <h3>Transferts hors UE</h3>
-          <p>Aucun transfert de données personnelles hors de l'Union européenne. Nos serveurs sont situés en Union Européenne. Les paiements sont traités en Irlande (Stripe).</p>
+          <p>Aucun transfert de données personnelles hors de l'Union européenne. Nos serveurs sont situés en Allemagne (Hetzner, FSN1). Les paiements sont traités en Irlande (Stripe).</p>
         </div>
       </div>
 
