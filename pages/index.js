@@ -406,10 +406,10 @@ export default function OrbalLanding() {
           </thead>
           <tbody>
             {[
-              ["Bref", "280 caractères maximum", "0,02 €"],
+              ["Bref", "280 caractères maximum", "0,05 €"],
               ["Standard", "Long format texte", "0,10 €"],
               ["Long", "Très long format", "0,20 €"],
-              ["Fichier", "Max 25 MB (photo, document, audio)", "1,00 €"],
+              ["Fichier", "Max 25 MB (photo, document, audio, vidéo)", "1,00 €"],
             ].map(([t, f, p]) => (
               <tr key={t}>
                 <td><strong>{t}</strong></td>
