@@ -438,7 +438,7 @@ export default function OrbalLanding() {
           </p>
           <div className="eclaireurs-grid">
             <div>
-              <div className="eclaireurs-stat"><div className="n serif">4,95€</div><div className="l">par mois, à vie (au lieu de 9,90€)</div></div>
+              <div className="eclaireurs-stat"><div className="n serif">0€</div><div className="l">gratuit, à vie (au lieu de 9,90€)</div></div>
               <div style={{marginTop:"1.5rem"}} className="eclaireurs-stat"><div className="n serif">25%</div><div className="l">de commission récurrente mensuelle sur vos filleuls directs</div></div>
             </div>
             <div>
