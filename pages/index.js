@@ -31,6 +31,10 @@ const STYLES = `
   .title em { font-style: italic; color: var(--purple-light); }
   .lead { color: var(--off); font-size: 1.02rem; max-width: 40rem; }
 
+  .ombres { text-align: center; }
+  .ombres-txt { color: var(--off); font-size: clamp(.98rem, 2.4vw, 1.12rem); line-height: 2.1; max-width: 42rem; margin: 0 auto; }
+  .ombres-fort { color: var(--white); }
+  .ombres-chute { font-style: italic; color: var(--gold); font-size: clamp(1.25rem, 3.4vw, 1.75rem); margin-top: 2rem; line-height: 1.5; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.4rem; margin-top: 2.6rem; }
   .card { border: 1px solid var(--border); border-radius: 10px; padding: 1.6rem; background: rgba(14,13,20,0.6); }
   .card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 400; margin-bottom: .6rem; }
@@ -100,6 +104,21 @@ export default function Accueil() {
 
       <div className="divider" />
 
+      {/* CE QUE NOUS VOYONS */}
+      <section className="ombres">
+        <div className="label">Ce que nous voyons</div>
+        <p className="ombres-txt">
+          Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer.<br />
+          C'est vrai de toute messagerie.<br />
+          Cette information n'existe que le temps de la remise, puis disparaît.<br />
+          <span className="ombres-fort">Ces pseudonymes ne sont rattachés à rien.</span><br />
+          Ni numéro, ni email, ni nom.
+        </p>
+        <p className="ombres-chute serif">Nous voyons des ombres se parler, jamais des personnes.</p>
+      </section>
+
+      <div className="divider" />
+
       {/* CE QU'EST ORBAL */}
       <section>
         <div className="label">Ce qu'est Orbal</div>
@@ -128,7 +147,7 @@ export default function Accueil() {
           </div>
           <div className="card">
             <h3>Rien à revendre</h3>
-            <p>Aucune publicité, aucun traceur, aucun profil marchand. Ce sont les abonnements qui font vivre Orbal — pas vous.</p>
+            <p>Aucune publicité, aucun traceur, aucun profil marchand. Ce sont les abonnements qui font vivre Orbal — pas la revente de ce que vous confiez.</p>
           </div>
           <div className="card">
             <h3>Hébergé en Europe</h3>
