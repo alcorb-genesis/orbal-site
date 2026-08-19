@@ -126,6 +126,14 @@ export default function Accueil() {
             <h3>Rien à saisir</h3>
             <p>Nous ne pouvons pas remettre ce que nous n'avons pas. Le contenu de vos échanges nous est inaccessible.</p>
           </div>
+          <div className="card">
+            <h3>Rien à revendre</h3>
+            <p>Aucune publicité, aucun traceur, aucun profil marchand. Ce sont les abonnements qui font vivre Orbal — pas vous.</p>
+          </div>
+          <div className="card">
+            <h3>Hébergé en Europe</h3>
+            <p>Nos serveurs sont en Union européenne. Ce qui y transite est chiffré, et n'y séjourne que le temps d'être remis.</p>
+          </div>
         </div>
       </section>
 
@@ -172,7 +180,7 @@ export default function Accueil() {
         <h2 className="title serif">Orbal <em>arrive</em></h2>
         <div className="attente">
           <p>
-            Nous ne vous demanderons jamais votre adresse. Ce serait commencer par
+            Nous ne vous demanderons jamais votre adresse email. Ce serait commencer par
             exactement ce que nous refusons de faire.
           </p>
           <p>
@@ -244,7 +252,7 @@ export default function Accueil() {
 
         <Accordion title="Article 8 — Résiliation">
           <p>L'utilisateur peut résilier son abonnement à tout moment depuis les paramètres de son compte. La résiliation prend effet au terme de la période en cours, sans remboursement au prorata.</p>
-          <p>Alcorb se réserve le droit de suspendre un compte en cas de violation des présentes conditions.</p>
+          <p>Le chiffrement de bout en bout rendant le contenu des échanges inaccessible à Alcorb, aucune suspension ne peut être fondée sur ce contenu. Alcorb ne peut agir que sur ce qui lui est techniquement constatable : défaut de paiement, usage abusif de l'infrastructure compromettant le service pour les autres utilisateurs, ou usurpation d'un pseudonyme réservé.</p>
           <p>En cas de fermeture du service, les utilisateurs seront informés quatre-vingt-dix jours à l'avance.</p>
           <p>Tout litige relatif aux présentes conditions est soumis au droit français.</p>
         </Accordion>
@@ -289,7 +297,8 @@ export default function Accueil() {
 
         <Accordion title="Ce que nous conservons">
           <p>Un identifiant de compte, un pseudonyme choisi par vous, et une empreinte de votre mot de passe. Les messages en attente de remise sont conservés chiffrés jusqu'à leur lecture, et au maximum sept jours.</p>
-          <p>Les métadonnées de connexion sont conservées pour la durée légale, conformément à la réglementation française.</p>
+          <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Cette information n'existe que le temps de la remise, puis disparaît avec le message.</p>
+          <p>Mais surtout : ces pseudonymes ne sont rattachés à rien. Ni numéro, ni adresse, ni nom, ni carnet de contacts. Nous voyons des ombres se parler, jamais des personnes.</p>
         </Accordion>
 
         <Accordion title="Paiements">
