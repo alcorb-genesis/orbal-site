@@ -27,6 +27,10 @@ const STYLES = `
   .btn.violet:hover { background: rgba(162,89,230,0.24); }
   .autre { margin-top: 1.6rem; }
   .autre a { color: rgba(237,232,227,0.45); font-size: .86rem; text-decoration: underline; cursor: pointer; }
+  .invitation { margin-bottom: 2.4rem; padding: 1.4rem 2rem; border: 1px solid rgba(224,184,76,0.35); border-radius: 14px; background: rgba(224,184,76,0.06); }
+  .invitation-titre { color: rgba(237,232,227,0.55); font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: .6rem; }
+  .invitation-code { font-family: 'Cormorant Garamond', serif; color: #E0B84C; font-size: 1.7rem; letter-spacing: .12em; }
+  .invitation-note { color: rgba(237,232,227,0.4); font-size: .8rem; margin-top: .6rem; }
   .infos { margin-top: 2.6rem; color: rgba(237,232,227,0.35); font-size: .8rem; line-height: 1.9; }
   .note { margin-top: 2rem; max-width: 28rem; color: rgba(237,232,227,0.45); font-size: .84rem; border-top: 1px solid rgba(123,47,190,0.25); padding-top: 1.6rem; }
   .signature { font-family: 'Cormorant Garamond', serif; font-style: italic; color: #E0B84C; font-size: 1.05rem; margin-top: 2.6rem; }
@@ -36,8 +40,14 @@ export default function Install() {
   const [os, setOs] = useState(null);
   const [forcer, setForcer] = useState(null);
   const [version, setVersion] = useState(null);
+  const [code, setCode] = useState(null);
 
   useEffect(() => {
+    // Un Eclaireur partage son lien avec ?ref=SON-CODE : on l'affiche pour
+    // que le nouvel arrivant puisse le recopier a l'inscription.
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref) setCode(ref.toUpperCase());
+
     const ua = navigator.userAgent || "";
     if (/android/i.test(ua)) setOs("android");
     else if (/iPad|iPhone|iPod/.test(ua)) setOs("ios");
@@ -58,6 +68,14 @@ export default function Install() {
         <p className="sub">
           Installez l'application, puis ouvrez-la : elle se tiendra à jour d'elle-même.
         </p>
+
+        {code && (
+          <div className="invitation">
+            <div className="invitation-titre">Vous êtes attendu</div>
+            <div className="invitation-code">{code}</div>
+            <div className="invitation-note">Notez ce code : il vous sera demandé à l'inscription.</div>
+          </div>
+        )}
 
         {vu === "android" && (
           <>
