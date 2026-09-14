@@ -228,7 +228,7 @@ export default function Accueil() {
           <p>Orbal est un service de messagerie chiffrée de bout en bout utilisant Orbal Protocol v3. Le service permet :</p>
           <ul>
             <li>L'envoi et la réception de messages texte chiffrés et éphémères</li>
-            <li>L'envoi de fichiers, photos, vidéos et messages vocaux jusqu'à 150 Mo</li>
+            <li>L'envoi de fichiers, photos et messages vocaux jusqu'à 150 Mo. Les vidéos jusqu'à 100 Mo</li>
             <li>La gestion d'un compte sans numéro de téléphone ni adresse email</li>
           </ul>
           <p>Les clés de déchiffrement ne quittant jamais les appareils des utilisateurs, ni les équipes ni les serveurs d'Alcorb ne peuvent accéder au contenu des messages.</p>
