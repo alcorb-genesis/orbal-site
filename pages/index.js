@@ -110,7 +110,8 @@ export default function Accueil() {
         <p className="ombres-txt">
           Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer.<br />
           C'est vrai de toute messagerie.<br />
-          Cette information n'existe que le temps de la remise, puis disparaît.<br />
+          Cette information disparaît avec le message : à la remise, ou après sept jours
+          si personne n'est venu le chercher.<br />
           <span className="ombres-fort">Ces pseudonymes ne sont rattachés à rien.</span><br />
           Ni numéro, ni email, ni nom.
         </p>
@@ -126,12 +127,12 @@ export default function Accueil() {
         <p className="lead">
           Orbal ne cherche pas à retenir votre attention. Il vous permet de dire ce que vous
           avez à dire, puis s'efface. Ce que vous écrivez disparaît après lecture — et
-          nos serveurs n'en gardent rien, parce qu'ils n'en ont jamais rien su.
+          nos serveurs n'en gardent rien, parce qu'ils n'ont jamais pu le lire.
         </p>
         <div className="grid">
           <div className="card">
             <h3>Éphémère par nature</h3>
-            <p>Les messages ne s'effacent pas par option : c'est leur condition. Ce qui est lu disparaît.</p>
+            <p>Les messages ne s'effacent pas par option : c'est leur condition. Un message lu disparaît. Un vocal écouté reste trente minutes — le temps de le réécouter si la vie vous a interrompu — puis s'efface. Vous pouvez l'éteindre avant terme d'un appui long, sans confirmation.</p>
           </div>
           <div className="card">
             <h3>Chiffré de bout en bout</h3>
@@ -151,7 +152,7 @@ export default function Accueil() {
           </div>
           <div className="card">
             <h3>Hébergé en Europe</h3>
-            <p>Nos serveurs sont en Union européenne. Ce qui y transite est chiffré, et n'y séjourne que le temps d'être remis.</p>
+            <p>Nos serveurs sont en Union européenne. Ce qui y transite est chiffré, et n'y séjourne que le temps d'être remis — sept jours au plus si personne ne vient le chercher.</p>
           </div>
         </div>
       </section>
@@ -216,7 +217,7 @@ export default function Accueil() {
       {/* CGU */}
       <div className="legal" id="cgu">
         <h2 className="serif">Conditions Générales d'Utilisation</h2>
-        <p className="maj">Version 1.1 — Droit français applicable</p>
+        <p className="maj">Version 1.2 — Droit français applicable</p>
 
         <Accordion title="Article 1 — Objet et champ d'application">
           <p>Les présentes Conditions Générales d'Utilisation régissent l'utilisation du service de messagerie chiffrée Orbal, édité par Alexis Bertrand, Entrepreneur Individuel exerçant sous l'enseigne Alcorb, SIRET 103 664 496 00017, domicilié 200 rue Croix Nivert, 75015 Paris.</p>
@@ -254,7 +255,8 @@ export default function Accueil() {
         <Accordion title="Article 5 — Protection des données personnelles">
           <p>Conformément au Règlement (UE) 2016/679 et à la loi n°78-17 du 6 janvier 1978, l'utilisateur dispose des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition.</p>
           <p>Ces droits s'exercent par courriel à alcorb.admin@proton.me. Alcorb s'engage à répondre dans un délai de trente jours.</p>
-          <p>Orbal est conçu pour collecter le strict minimum : aucune adresse, aucun numéro, aucun carnet de contacts. Le contenu des messages est chiffré et techniquement inaccessible. Les métadonnées de connexion sont conservées pour la durée légale.</p>
+          <p>Orbal est conçu pour collecter le strict minimum : aucune adresse, aucun numéro, aucun carnet de contacts. Le contenu des messages est chiffré et techniquement inaccessible.</p>
+          <p>Orbal ne tient aucun registre de connexion ni d'échange. Les seules données conservées sont celles nécessaires au fonctionnement du compte : un identifiant, un pseudonyme, une empreinte de mot de passe, et les messages non encore remis — au maximum sept jours.</p>
         </Accordion>
 
         <Accordion title="Article 6 — Propriété intellectuelle">
@@ -266,7 +268,7 @@ export default function Accueil() {
           <p>Alcorb met tout en œuvre pour assurer la disponibilité du service sans pouvoir en garantir la continuité absolue.</p>
           <p>L'utilisateur est seul responsable du contenu de ses messages. Le chiffrement de bout en bout rend toute modération techniquement impossible ; il appartient à chacun de respecter les lois en vigueur.</p>
           <p>Alcorb ne saurait être tenu responsable des dommages indirects résultant de l'utilisation ou de l'impossibilité d'utilisation du service.</p>
-          <p>En cas de réquisition judiciaire, Alcorb ne peut transmettre que les métadonnées de connexion légalement conservées. Le contenu des messages demeure techniquement inaccessible.</p>
+          <p>En cas de réquisition judiciaire, Alcorb transmet ce dont il dispose — les données de compte mentionnées à l'article 5. Il ne conserve ni historique de connexion, ni journal des échanges, et ne peut donc les produire. Le contenu des messages demeure techniquement inaccessible.</p>
         </Accordion>
 
         <Accordion title="Article 8 — Résiliation">
@@ -315,8 +317,9 @@ export default function Accueil() {
         </Accordion>
 
         <Accordion title="Ce que nous conservons">
-          <p>Un identifiant de compte, un pseudonyme choisi par vous, et une empreinte de votre mot de passe. Les messages en attente de remise sont conservés chiffrés jusqu'à leur lecture, et au maximum sept jours.</p>
-          <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Cette information n'existe que le temps de la remise, puis disparaît avec le message.</p>
+          <p>Un identifiant de compte, un pseudonyme choisi par vous, et une empreinte de votre mot de passe. Les messages en attente de remise sont conservés chiffrés jusqu'à leur remise, et au maximum sept jours.</p>
+          <p>Les accusés de lecture — qui ne contiennent aucun texte, seulement le signal qu'un message a été ouvert — attendent de la même manière et disparaissent dès qu'ils sont remis.</p>
+          <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Cette information disparaît avec le message.</p>
           <p>Mais surtout : ces pseudonymes ne sont rattachés à rien. Ni numéro, ni adresse, ni nom, ni carnet de contacts. Nous voyons des ombres se parler, jamais des personnes.</p>
         </Accordion>
 
