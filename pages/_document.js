@@ -12,7 +12,9 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://orbal.app" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="robots" content="index, follow" />
+        {/* `robots` est desormais pose par `_app.js` : `next/document` echappe a
+            la deduplication de `next/head`, et une page ne pouvait donc pas
+            remplacer la valeur par defaut, seulement s'y ajouter. */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
