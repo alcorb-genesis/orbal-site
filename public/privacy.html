@@ -24,30 +24,35 @@ footer{margin-top:48px;padding-top:24px;border-top:1px solid rgba(123,47,190,0.3
 <h2>1. Responsable du traitement</h2>
 <p>Alexis Bertrand - Entrepreneur Individuel (Alcorb) - SIRET 103 664 496 00017<br>200 rue Croix Nivert, 75015 Paris (HelloDom SAS)<br>Contact : <a href="mailto:alcorb.admin@proton.me">alcorb.admin@proton.me</a></p>
 <h2>2. Principe fondamental</h2>
-<p>Orbal est concu sur un principe : vos messages vous appartiennent. Nous ne lisons pas vos conversations, ne vendons pas vos donnees, et n utilisons aucune infrastructure americaine.</p>
+<p>Orbal est concu sur un principe : vos messages vous appartiennent. Nous ne lisons pas vos conversations et ne vendons pas vos donnees.</p>
 <h2>3. Donnees collectees</h2>
 <ul>
-<li>Compte anonyme : aucune donnee personnelle requise</li>
-<li>Compte standard ou Eclaireur : email ou pseudonyme, mot de passe chiffre</li>
-<li>Cles cryptographiques publiques uniquement (les cles privees ne quittent jamais votre appareil)</li>
-<li>Donnees de paiement traitees exclusivement par Stripe</li>
+<li>Compte pseudonyme : aucune identite civile demandee a l inscription</li>
+<li>Donnees de compte : un identifiant, un pseudonyme et une empreinte du mot de passe</li>
+<li>Cles cryptographiques publiques (les cles privees sont derivees de votre phrase de recuperation et ne sont pas transmises a nos serveurs)</li>
+<li>Contacts et blocages que vous etablissez dans Orbal, conserves sur nos serveurs pour le fonctionnement du service</li>
+<li>Donnees de paiement traitees exclusivement par Stripe ; la reference de votre abonnement et les droits qu il ouvre sont rattaches a votre compte, ce qui peut permettre de le rapprocher de l identite du payeur</li>
+<li>Adresse IP de connexion : recue par le serveur comme pour tout service en ligne. Depuis le 14 octobre 2026, les requetes ordinaires adressees au relais ne sont plus inscrites dans un journal d acces ; les erreurs techniques, ainsi que des journaux anterieurs a cette date, peuvent comporter cette adresse</li>
 </ul>
 <h2>4. Ce que nous ne collectons pas</h2>
 <ul>
-<li>Le contenu de vos messages (chiffres E2EE, illisibles pour nos serveurs)</li>
-<li>Votre carnet d adresses ou vos contacts</li>
+<li>Le contenu de vos messages en clair : il est chiffre sur votre appareil avant l envoi, et nos serveurs ne transmettent que ce contenu chiffre</li>
+<li>Le carnet d adresses de votre telephone</li>
 <li>Votre localisation</li>
 <li>Tout identifiant publicitaire</li>
 </ul>
 <h2>5. Chiffrement E2EE</h2>
-<p>Tous les messages sont chiffres avec Orbal Protocol v3 (ECDH P-256 + AES-256-GCM + HKDF) sur votre appareil avant transmission. Nos serveurs ne recoivent que des donnees illisibles sans votre cle privee.</p>
+<p>Le contenu des messages est chiffre sur votre appareil avant l envoi, avec des cles derivees de votre phrase de recuperation de douze mots. Le serveur transmet ce contenu chiffre ; dans le fonctionnement prevu, il ne dispose pas des cles permettant de le dechiffrer. Ce chiffrement porte sur le contenu : les informations necessaires a l acheminement (notamment le pseudonyme destinataire) restent visibles du serveur.</p>
+<p>Cette phrase permet de reconstituer vos cles : une personne qui l obtient, et qui dispose d une copie de vos contenus chiffres, peut les dechiffrer. Gardez-la secrete.</p>
 <h2>6. Infrastructure</h2>
-<p>Serveurs heberges exclusivement en Union Europeenne - Hetzner Cloud, Nuremberg (Allemagne). Aucune donnee transmise hors UE. Aucune API americaine.</p>
+<p>Serveurs du relais Orbal heberges en Union Europeenne, en Allemagne (Hetzner).</p>
+<p>Certains prestataires interviennent en dehors de cette infrastructure, notamment Stripe pour les paiements et Expo pour les notifications. Ils traitent les donnees necessaires a leur fonction selon leurs propres conditions.</p>
 <h2>7. Duree de conservation</h2>
 <ul>
-<li>Messages en transit : supprimes du serveur des la livraison</li>
-<li>Messages non delivres : conserves maximum 30 jours puis supprimes</li>
+<li>Messages remis : retires du relais des la livraison</li>
+<li>Messages non delivres : conserves chiffres au maximum 7 jours puis retires du relais</li>
 <li>Donnees de compte : conservees jusqu a la suppression du compte</li>
+<li>Copies de sauvegarde et journaux techniques : ils peuvent contenir certaines de ces donnees (messages en attente chiffres, donnees de compte, adresses IP) au-dela des durees ci-dessus</li>
 </ul>
 <h2>8. Vos droits RGPD</h2>
 <p>Acces, rectification, effacement, portabilite, opposition.<br>Contact : <a href="mailto:alcorb.admin@proton.me">alcorb.admin@proton.me</a></p>

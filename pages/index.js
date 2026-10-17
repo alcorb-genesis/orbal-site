@@ -97,8 +97,8 @@ export default function Accueil() {
         <h1 className="hero-title serif">Vos mots.<br /><em>Puis plus rien.</em></h1>
         <div className="signature">« La seule trace, c'est le souvenir. »</div>
         <p className="hero-sub">
-          Une messagerie où les messages s'effacent après lecture. Rien n'est gardé,
-          rien n'est analysé, rien n'est vendu.
+          Une messagerie où les messages s'effacent après lecture. Leur contenu est chiffré
+          sur votre appareil, et rien de ce que vous confiez n'est vendu.
         </p>
       </div>
 
@@ -110,12 +110,13 @@ export default function Accueil() {
         <p className="ombres-txt">
           Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer.<br />
           C'est vrai de toute messagerie.<br />
-          Cette information disparaît avec le message : à la remise, ou après sept jours
+          Le message et son adressage sont retirés du relais à la remise, ou après sept jours
           si personne n'est venu le chercher.<br />
-          <span className="ombres-fort">Ces pseudonymes ne sont rattachés à rien.</span><br />
-          Ni numéro, ni email, ni nom.
+          <span className="ombres-fort">Aucune identité civile n'est demandée à l'inscription.</span><br />
+          Ni numéro, ni email, ni nom. Un abonnement payé via Stripe peut toutefois permettre
+          un rapprochement avec l'identité du payeur.
         </p>
-        <p className="ombres-chute serif">Nous voyons des ombres se parler, jamais des personnes.</p>
+        <p className="ombres-chute serif">Nous acheminons des messages chiffrés entre pseudonymes.</p>
       </section>
 
       <div className="divider" />
@@ -127,7 +128,7 @@ export default function Accueil() {
         <p className="lead">
           Orbal ne cherche pas à retenir votre attention. Il vous permet de dire ce que vous
           avez à dire, puis s'efface. Ce que vous écrivez disparaît après lecture — et
-          nos serveurs n'en gardent rien, parce qu'ils n'ont jamais pu le lire.
+          son contenu, chiffré sur votre appareil avant l'envoi, ne transite par nos serveurs que sous cette forme.
         </p>
         <div className="grid">
           <div className="card">
@@ -136,15 +137,15 @@ export default function Accueil() {
           </div>
           <div className="card">
             <h3>Chiffré de bout en bout</h3>
-            <p>Orbal Protocol v3. Les clés ne quittent jamais votre appareil — même nous ne pouvons pas lire ce qui passe.</p>
+            <p>Orbal Protocol v3. Le contenu de vos messages est chiffré sur votre appareil avant l'envoi, avec des clés dérivées de vos douze mots de récupération ; nos serveurs ne relaient que ce contenu chiffré. Gardez ces mots pour vous seul.</p>
           </div>
           <div className="card">
             <h3>Sans identité</h3>
             <p>Un pseudonyme, un mot de passe. Ni numéro de téléphone, ni adresse email, ni carnet de contacts aspiré.</p>
           </div>
           <div className="card">
-            <h3>Rien à saisir</h3>
-            <p>Nous ne pouvons pas remettre ce que nous n'avons pas. Le contenu de vos échanges nous est inaccessible.</p>
+            <h3>Contenu chiffré</h3>
+            <p>Nous ne détenons pas les clés de vos messages : leur contenu nous parvient chiffré, et nous ne pouvons pas le remettre en clair.</p>
           </div>
           <div className="card">
             <h3>Rien à revendre</h3>
@@ -152,7 +153,7 @@ export default function Accueil() {
           </div>
           <div className="card">
             <h3>Hébergé en Europe</h3>
-            <p>Nos serveurs sont en Union européenne. Ce qui y transite est chiffré, et n'y séjourne que le temps d'être remis — sept jours au plus si personne ne vient le chercher.</p>
+            <p>Nos serveurs sont en Union européenne. Le contenu des messages y transite chiffré, et est retiré du relais une fois remis — après sept jours au plus si personne ne vient le chercher.</p>
           </div>
         </div>
       </section>
@@ -164,7 +165,7 @@ export default function Accueil() {
         <div className="label">Le modèle</div>
         <h2 className="title serif">Écrire est libre.<br /><em>Toujours.</em></h2>
         <p className="lead">
-          Tous vos messages écrits sont gratuits et sans limite, pour tout le monde, pour toujours.
+          Tous vos messages écrits sont gratuits, pour tout le monde, pour toujours — dans les seules limites techniques qui protègent le service contre les abus.
           L'abonnement ouvre les vocaux, les photos, les vidéos et les documents — et c'est lui
           qui permet à Orbal de ne rien vendre de ce que vous confiez.
         </p>
@@ -172,17 +173,17 @@ export default function Accueil() {
           <div className="offre libre">
             <div className="nom">Gratuit</div>
             <div className="montant serif">0€</div>
-            <div className="quoi">Tous vos messages écrits, sans limite</div>
+            <div className="quoi">Tous vos messages écrits</div>
           </div>
           <div className="offre">
             <div className="nom">Journée</div>
             <div className="montant serif">1€</div>
-            <div className="quoi">Tout illimité pendant 24 heures</div>
+            <div className="quoi">Tout pendant 24 heures, dans les limites techniques anti-abus</div>
           </div>
           <div className="offre">
             <div className="nom">Semaine</div>
             <div className="montant serif">3€</div>
-            <div className="quoi">Tout illimité pendant 7 jours</div>
+            <div className="quoi">Tout pendant 7 jours, dans les limites techniques anti-abus</div>
           </div>
           <div className="offre phare">
             <div className="nom">Premium</div>
@@ -231,32 +232,34 @@ export default function Accueil() {
             <li>L'envoi de fichiers, photos et messages vocaux jusqu'à 150 Mo. Les vidéos jusqu'à 100 Mo</li>
             <li>La gestion d'un compte sans numéro de téléphone ni adresse email</li>
           </ul>
-          <p>Les clés de déchiffrement ne quittant jamais les appareils des utilisateurs, ni les équipes ni les serveurs d'Alcorb ne peuvent accéder au contenu des messages.</p>
-          <p>L'ensemble des messages écrits est accessible gratuitement et sans limite à tout utilisateur, de manière permanente et inconditionnelle.</p>
+          <p>Le contenu des messages est chiffré sur les appareils des utilisateurs avant l'envoi, avec des clés dérivées de la phrase de récupération propre à chaque compte. Les serveurs d'Alcorb transmettent ce contenu chiffré ; dans le fonctionnement prévu du service, ni les équipes ni les serveurs d'Alcorb ne disposent des clés permettant de le déchiffrer.</p>
+          <p>L'ensemble des messages écrits est accessible gratuitement à tout utilisateur, de manière permanente, sous réserve des limites techniques destinées à prévenir les abus.</p>
         </Accordion>
 
         <Accordion title="Article 3 — Inscription et compte">
           <p>L'inscription requiert un pseudonyme et un mot de passe. Aucun numéro de téléphone ni adresse email n'est demandé. L'utilisateur est responsable de la confidentialité de ses identifiants.</p>
           <p>L'utilisateur doit conserver sa phrase de récupération de douze mots, qui seule permet de restaurer son compte en cas de perte d'appareil. Alcorb ne peut en aucun cas récupérer le compte d'un utilisateur ayant perdu cette phrase.</p>
+          <p>Cette phrase permet de reconstituer les clés du compte : une personne qui l'obtient, et qui dispose d'une copie des contenus chiffrés, peut les déchiffrer. Elle doit rester secrète.</p>
         </Accordion>
 
         <Accordion title="Article 4 — Tarifs et paiement">
-          <p>Les messages écrits sont gratuits, sans limite et sans condition. Les fonctionnalités multimédias (vocaux, photos, vidéos, documents) requièrent un abonnement :</p>
+          <p>Les messages écrits sont gratuits, sous réserve des limites techniques destinées à prévenir les abus. Les fonctionnalités multimédias (vocaux, photos, vidéos, documents) requièrent un abonnement :</p>
           <ul>
             <li>Journée : 1€ TTC — accès complet pendant 24 heures</li>
             <li>Semaine : 3€ TTC — accès complet pendant 7 jours</li>
             <li>Mensuel : 9,90€ TTC par mois, renouvelé automatiquement</li>
             <li>Annuel : 99€ TTC par an, renouvelé automatiquement</li>
           </ul>
-          <p>Les paiements sont traités par Stripe. Alcorb ne stocke aucune donnée bancaire et ne conserve aucun lien entre un paiement et le contenu des échanges.</p>
+          <p>Les paiements sont traités par Stripe. Alcorb ne stocke aucune donnée bancaire et ne conserve aucun lien entre un paiement et le contenu des échanges. Les informations d'abonnement (référence de l'abonnement et droits ouverts) sont en revanche rattachées au compte de l'utilisateur.</p>
           <p>L'abonnement peut être résilié à tout moment ; l'accès reste ouvert jusqu'au terme de la période déjà payée. Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux services numériques dont l'exécution a commencé avec l'accord de l'utilisateur.</p>
         </Accordion>
 
         <Accordion title="Article 5 — Protection des données personnelles">
           <p>Conformément au Règlement (UE) 2016/679 et à la loi n°78-17 du 6 janvier 1978, l'utilisateur dispose des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition.</p>
           <p>Ces droits s'exercent par courriel à alcorb.admin@proton.me. Alcorb s'engage à répondre dans un délai de trente jours.</p>
-          <p>Orbal est conçu pour collecter le strict minimum : aucune adresse, aucun numéro, aucun carnet de contacts. Le contenu des messages est chiffré et techniquement inaccessible.</p>
-          <p>Orbal ne tient aucun registre de connexion ni d'échange. Les seules données conservées sont celles nécessaires au fonctionnement du compte : un identifiant, un pseudonyme, une empreinte de mot de passe, et les messages non encore remis — au maximum sept jours.</p>
+          <p>Orbal est conçu pour collecter le strict minimum : aucune adresse email, aucun numéro de téléphone, aucun accès au carnet d'adresses du téléphone. Le contenu des messages est chiffré sur les appareils avant l'envoi ; dans le fonctionnement prévu du service, Alcorb ne détient pas les clés permettant de le déchiffrer.</p>
+          <p>Les données conservées pour le fonctionnement du compte comprennent notamment : un identifiant, un pseudonyme, une empreinte de mot de passe, la liste des contacts et des blocages établis dans Orbal, les informations d'abonnement nécessaires aux droits du compte, et les messages non encore remis, chiffrés, au maximum sept jours.</p>
+          <p>Comme tout service en ligne, le serveur reçoit l'adresse IP des appareils qui s'y connectent. Depuis le 14 octobre 2026, les requêtes ordinaires adressées au relais ne sont plus inscrites dans un journal d'accès. Les erreurs techniques restent consignées et peuvent comporter une adresse IP ; des journaux antérieurs à cette date peuvent également subsister.</p>
         </Accordion>
 
         <Accordion title="Article 6 — Propriété intellectuelle">
@@ -266,14 +269,14 @@ export default function Accueil() {
 
         <Accordion title="Article 7 — Responsabilités et limitations">
           <p>Alcorb met tout en œuvre pour assurer la disponibilité du service sans pouvoir en garantir la continuité absolue.</p>
-          <p>L'utilisateur est seul responsable du contenu de ses messages. Le chiffrement de bout en bout rend toute modération techniquement impossible ; il appartient à chacun de respecter les lois en vigueur.</p>
+          <p>L'utilisateur est seul responsable du contenu de ses messages. Alcorb ne détenant pas les clés permettant de lire le contenu des messages, aucune modération de ce contenu n'est possible ; il appartient à chacun de respecter les lois en vigueur.</p>
           <p>Alcorb ne saurait être tenu responsable des dommages indirects résultant de l'utilisation ou de l'impossibilité d'utilisation du service.</p>
-          <p>En cas de réquisition judiciaire, Alcorb transmet ce dont il dispose — les données de compte mentionnées à l'article 5. Il ne conserve ni historique de connexion, ni journal des échanges, et ne peut donc les produire. Le contenu des messages demeure techniquement inaccessible.</p>
+          <p>En cas de réquisition judiciaire, Alcorb transmet ce dont il dispose à la date de la demande — les données de compte mentionnées à l'article 5 et, s'ils existent, les journaux techniques du serveur. Alcorb ne détient pas les clés permettant de déchiffrer le contenu des messages.</p>
         </Accordion>
 
         <Accordion title="Article 8 — Résiliation">
           <p>L'utilisateur peut résilier son abonnement à tout moment depuis les paramètres de son compte. La résiliation prend effet au terme de la période en cours, sans remboursement au prorata.</p>
-          <p>Le chiffrement de bout en bout rendant le contenu des échanges inaccessible à Alcorb, aucune suspension ne peut être fondée sur ce contenu. Alcorb ne peut agir que sur ce qui lui est techniquement constatable : défaut de paiement, usage abusif de l'infrastructure compromettant le service pour les autres utilisateurs, ou usurpation d'un pseudonyme réservé.</p>
+          <p>Alcorb ne détenant pas les clés permettant de lire le contenu des échanges, aucune suspension ne peut être fondée sur ce contenu. Alcorb ne peut agir que sur ce qui lui est techniquement constatable : défaut de paiement, usage abusif de l'infrastructure compromettant le service pour les autres utilisateurs, ou usurpation d'un pseudonyme réservé.</p>
           <p>En cas de fermeture du service, les utilisateurs seront informés quatre-vingt-dix jours à l'avance.</p>
           <p>Tout litige relatif aux présentes conditions est soumis au droit français.</p>
         </Accordion>
@@ -309,27 +312,28 @@ export default function Accueil() {
       {/* CONFIDENTIALITE */}
       <div className="legal" id="confidentialite">
         <h2 className="serif">Politique de confidentialité</h2>
-        <p className="maj">Ce que nous savons de vous — et ce que nous ne saurons jamais</p>
+        <p className="maj">Ce que nous savons de vous — et ce que nous ne vous demandons pas</p>
 
         <Accordion title="Ce que nous ne collectons pas">
-          <p>Orbal ne demande ni numéro de téléphone, ni adresse email, ni nom, ni date de naissance. Nous n'accédons pas à votre carnet de contacts. Nous ne suivons pas votre position. Nous n'utilisons aucun traceur publicitaire.</p>
-          <p>Le contenu de vos messages nous est techniquement inaccessible : il est chiffré sur votre appareil et ne peut être déchiffré que sur celui de votre correspondant.</p>
+          <p>Orbal ne demande ni numéro de téléphone, ni adresse email, ni nom, ni date de naissance. Nous n'accédons pas au carnet d'adresses de votre téléphone. Nous ne suivons pas votre position. Nous n'utilisons aucun traceur publicitaire.</p>
+          <p>Le contenu de vos messages est chiffré sur votre appareil avant l'envoi, avec des clés dérivées de la phrase de récupération de votre compte ; nos serveurs ne transmettent que ce contenu chiffré et n'en détiennent pas les clés. Ce chiffrement porte sur le contenu : les informations d'acheminement décrites ci-dessous restent visibles de nos serveurs. Cette phrase permet de reconstituer ces clés : une personne qui l'obtient, et qui dispose d'une copie de vos contenus chiffrés, peut les déchiffrer. Gardez-la secrète.</p>
         </Accordion>
 
         <Accordion title="Ce que nous conservons">
-          <p>Un identifiant de compte, un pseudonyme choisi par vous, et une empreinte de votre mot de passe. Les messages en attente de remise sont conservés chiffrés jusqu'à leur remise, et au maximum sept jours.</p>
+          <p>Notamment : un identifiant de compte, un pseudonyme choisi par vous, une empreinte de votre mot de passe, la liste de vos contacts et de vos blocages dans Orbal, et, si vous vous abonnez, la référence de votre abonnement et les droits qu'il ouvre. Les messages en attente de remise sont conservés chiffrés jusqu'à leur remise, et au maximum sept jours.</p>
           <p>Les accusés de lecture — qui ne contiennent aucun texte, seulement le signal qu'un message a été ouvert — attendent de la même manière et disparaissent dès qu'ils sont remis.</p>
-          <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Cette information disparaît avec le message.</p>
-          <p>Mais surtout : ces pseudonymes ne sont rattachés à rien. Ni numéro, ni adresse, ni nom, ni carnet de contacts. Nous voyons des ombres se parler, jamais des personnes.</p>
+          <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Le message et son adressage sont retirés du relais à sa remise ou à son expiration ; cela n'efface ni votre liste de contacts, ni les copies de sauvegarde et journaux techniques décrits ici.</p>
+          <p>Comme tout service en ligne, notre serveur reçoit l'adresse IP de votre appareil. Depuis le 14 octobre 2026, les requêtes ordinaires adressées au relais ne sont plus inscrites dans un journal d'accès ; les erreurs techniques, ainsi que des journaux antérieurs à cette date, peuvent comporter cette adresse.</p>
+          <p>Aucun numéro, aucune adresse email ni aucun nom n'est demandé à l'inscription, et Orbal n'accède pas au carnet d'adresses de votre téléphone. Un pseudonyme peut toutefois être rapproché d'une adresse IP dans ces journaux techniques et, si vous vous abonnez, de l'identité du payeur connue de Stripe.</p>
         </Accordion>
 
         <Accordion title="Paiements">
-          <p>Les paiements sont traités par Stripe, qui applique ses propres obligations d'identification. Alcorb ne stocke aucune donnée bancaire et n'établit aucun lien entre un paiement et le contenu des échanges.</p>
+          <p>Les paiements sont traités par Stripe, qui applique ses propres obligations d'identification. Alcorb ne stocke aucune donnée bancaire et n'établit aucun lien entre un paiement et le contenu des échanges. La référence de votre abonnement et les droits qu'il ouvre sont en revanche rattachés à votre compte.</p>
         </Accordion>
 
         <Accordion title="Vos droits">
           <p>Vous disposez des droits d'accès, de rectification, d'effacement, de portabilité et d'opposition prévus par le RGPD. Ils s'exercent à l'adresse alcorb.admin@proton.me.</p>
-          <p>La suppression de votre compte est immédiate et définitive depuis les paramètres de l'application.</p>
+          <p>La suppression de votre compte depuis les paramètres de l'application prend effet immédiatement sur le serveur en service. Des copies de sauvegarde et des journaux techniques antérieurs à la suppression peuvent encore en contenir des éléments.</p>
         </Accordion>
       </div>
 
