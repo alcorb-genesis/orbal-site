@@ -1,4 +1,7 @@
 import Head from "next/head";
+import ChoixLangue from "./ChoixLangue";
+import { retour } from "../contenu/retour";
+import { homologues } from "../lib/langue";
 
 // Presentation commune aux deux pages de retour de paiement.
 //
@@ -49,7 +52,11 @@ const STYLES = `
   @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
 `;
 
-export default function PageRetour({ titre, sousTitre, indications, signature }) {
+// `page` vaut "success" ou "cancel" ; les textes viennent de `contenu/retour.js`, dans la langue de l'adresse.
+export default function PageRetour({ lang, page }) {
+  const t = retour[lang];
+  const { titre, sousTitre, indications, signature } = t[page];
+  const accueil = homologues("/")[lang];
   return (
     <>
       <Head>
@@ -60,17 +67,18 @@ export default function PageRetour({ titre, sousTitre, indications, signature })
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <style jsx global>{STYLES}</style>
+      <ChoixLangue lang={lang} garderRequete={false} />
       <main className="wrap">
         <img className="corbeau" src="/corbeau-cercle.png" alt="Orbal" />
         <h1>{titre}</h1>
         <p className="sub">{sousTitre}</p>
 
         <div className="suite">
-          <div className="suite-titre">La suite</div>
+          <div className="suite-titre">{t.suite}</div>
           {indications.map((texte, i) => <p key={i}>{texte}</p>)}
         </div>
 
-        <a className="btn" href="/">Retour au site</a>
+        <a className="btn" href={accueil}>{t.retourSite}</a>
 
         <p className="signature">{signature}</p>
       </main>

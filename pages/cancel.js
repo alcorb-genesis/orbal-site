@@ -6,15 +6,7 @@ import PageRetour from "../components/PageRetour";
 // paiement a echoue, ni qu'aucun debit n'a eu lieu. Elle ne voit ni la banque
 // ni le circuit. Elle renvoie vers l'application.
 
+// Textes (français et anglais) : contenu/retour.js. Version anglaise : pages/en/cancel.js.
 export default function Cancel() {
-  return (
-    <PageRetour
-      titre="De retour vers Orbal"
-      sousTitre="Vous pouvez rouvrir l’application pour consulter votre abonnement ou reprendre votre souscription."
-      indications={[
-        "Vérifiez votre accès dans Orbal avant de recommencer un paiement.",
-      ]}
-      signature="À bientôt dans Orbal."
-    />
-  );
+  return <PageRetour lang="fr" page="cancel" />;
 }
