@@ -8,9 +8,9 @@ export default function Document() {
         <meta name="description" content="Orbal — Messagerie chiffrée souveraine. Vos messages. Votre souveraineté." />
         <meta name="keywords" content="messagerie chiffrée, E2EE, souveraineté données, Orbal, Alcorb" />
         <meta property="og:title" content="Orbal — Vos messages. Votre souveraineté." />
-        <meta property="og:description" content="La seule messagerie E2EE européenne sans numéro de téléphone, sans confiance aveugle." />
+        <meta property="og:description" content="Orbal — Messagerie chiffrée souveraine. Vos messages. Votre souveraineté." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://orbal.app" />
+        <meta property="og:url" content="https://alcorb.app" />
         <meta name="twitter:card" content="summary_large_image" />
         {/* `robots` est desormais pose par `_app.js` : `next/document` echappe a
             la deduplication de `next/head`, et une page ne pouvait donc pas

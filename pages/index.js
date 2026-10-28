@@ -137,7 +137,7 @@ export default function Accueil() {
           </div>
           <div className="card">
             <h3>Chiffré de bout en bout</h3>
-            <p>Orbal Protocol v3. Le contenu de vos messages est chiffré sur votre appareil avant l'envoi, avec des clés dérivées de vos douze mots de récupération ; nos serveurs ne relaient que ce contenu chiffré. Gardez ces mots pour vous seul.</p>
+            <p>Ce que vous écrivez est chiffré sur votre appareil, avant même de partir. Nos serveurs n'en relaient que cette forme. Gardez vos douze mots pour vous seul.</p>
           </div>
           <div className="card">
             <h3>Sans identité</h3>
@@ -218,7 +218,8 @@ export default function Accueil() {
       {/* CGU */}
       <div className="legal" id="cgu">
         <h2 className="serif">Conditions Générales d'Utilisation</h2>
-        <p className="maj">Version 1.2 — Droit français applicable</p>
+        <p className="maj">Version 1.3 du 28 octobre 2026 — Droit français applicable<br />
+          Cette mise à jour décrit plus précisément la protection de vos messages et la récupération de votre compte : retrouver votre compte ne garantit pas de retrouver les messages qui attendaient votre ancien téléphone. Rien ne change pour les tarifs, les abonnements ni vos droits.</p>
 
         <Accordion title="Article 1 — Objet et champ d'application">
           <p>Les présentes Conditions Générales d'Utilisation régissent l'utilisation du service de messagerie chiffrée Orbal, édité par Alexis Bertrand, Entrepreneur Individuel exerçant sous l'enseigne Alcorb, SIRET 103 664 496 00017, domicilié 200 rue Croix Nivert, 75015 Paris.</p>
@@ -232,14 +233,15 @@ export default function Accueil() {
             <li>L'envoi de fichiers, photos et messages vocaux jusqu'à 150 Mo. Les vidéos jusqu'à 100 Mo</li>
             <li>La gestion d'un compte sans numéro de téléphone ni adresse email</li>
           </ul>
-          <p>Le contenu des messages est chiffré sur les appareils des utilisateurs avant l'envoi, avec des clés dérivées de la phrase de récupération propre à chaque compte. Les serveurs d'Alcorb transmettent ce contenu chiffré ; dans le fonctionnement prévu du service, ni les équipes ni les serveurs d'Alcorb ne disposent des clés permettant de le déchiffrer.</p>
+          <p>Le contenu des messages est chiffré sur l'appareil de l'utilisateur avant l'envoi. Les serveurs d'Alcorb ne transmettent que ce contenu chiffré ; dans le fonctionnement prévu du service, ni les équipes ni les serveurs d'Alcorb ne disposent des clés permettant de le déchiffrer. Les informations nécessaires à l'acheminement, comme le pseudonyme du destinataire, restent visibles des serveurs. La protection évolue avec l'application : il est recommandé de la garder à jour.</p>
           <p>L'ensemble des messages écrits est accessible gratuitement à tout utilisateur, de manière permanente, sous réserve des limites techniques destinées à prévenir les abus.</p>
         </Accordion>
 
         <Accordion title="Article 3 — Inscription et compte">
           <p>L'inscription requiert un pseudonyme et un mot de passe. Aucun numéro de téléphone ni adresse email n'est demandé. L'utilisateur est responsable de la confidentialité de ses identifiants.</p>
-          <p>L'utilisateur doit conserver sa phrase de récupération de douze mots, qui seule permet de restaurer son compte en cas de perte d'appareil. Alcorb ne peut en aucun cas récupérer le compte d'un utilisateur ayant perdu cette phrase.</p>
-          <p>Cette phrase permet de reconstituer les clés du compte : une personne qui l'obtient, et qui dispose d'une copie des contenus chiffrés, peut les déchiffrer. Elle doit rester secrète.</p>
+          <p>L'utilisateur doit conserver sa phrase de récupération de douze mots, par écrit ou dans une fiche de secours chiffrée par un mot de passe qu'il choisit. Elle seule permet de reprendre son compte sur un nouvel appareil. La fiche de secours garde cette phrase ; elle ne sauvegarde pas les conversations. Alcorb ne peut ni récupérer un compte dont la phrase est perdue, ni ouvrir une fiche de secours, ni en retrouver le mot de passe.</p>
+          <p>Retrouver son compte ne garantit pas de retrouver les messages qui attendaient l'ancien appareil : certains restent liés à celui-ci et ne peuvent pas être récupérés.</p>
+          <p>Une personne qui obtient cette phrase peut se connecter à la place de l'utilisateur et lire certains contenus chiffrés dont elle aurait obtenu une copie. La phrase doit donc rester secrète, comme la fiche de secours et son mot de passe.</p>
         </Accordion>
 
         <Accordion title="Article 4 — Tarifs et paiement">
@@ -316,7 +318,7 @@ export default function Accueil() {
 
         <Accordion title="Ce que nous ne collectons pas">
           <p>Orbal ne demande ni numéro de téléphone, ni adresse email, ni nom, ni date de naissance. Nous n'accédons pas au carnet d'adresses de votre téléphone. Nous ne suivons pas votre position. Nous n'utilisons aucun traceur publicitaire.</p>
-          <p>Le contenu de vos messages est chiffré sur votre appareil avant l'envoi, avec des clés dérivées de la phrase de récupération de votre compte ; nos serveurs ne transmettent que ce contenu chiffré et n'en détiennent pas les clés. Ce chiffrement porte sur le contenu : les informations d'acheminement décrites ci-dessous restent visibles de nos serveurs. Cette phrase permet de reconstituer ces clés : une personne qui l'obtient, et qui dispose d'une copie de vos contenus chiffrés, peut les déchiffrer. Gardez-la secrète.</p>
+          <p>Le contenu de vos messages est chiffré sur votre appareil avant l'envoi ; nos serveurs ne transmettent que ce contenu chiffré et n'en détiennent pas les clés. Ce chiffrement porte sur ce que vous écrivez : les informations d'acheminement décrites ci-dessous restent visibles de nos serveurs.</p>
         </Accordion>
 
         <Accordion title="Ce que nous conservons">
@@ -325,6 +327,8 @@ export default function Accueil() {
           <p>Pour acheminer un message, Orbal doit savoir vers quel pseudonyme l'envoyer — c'est vrai de toute messagerie, sans exception. Le message et son adressage sont retirés du relais à sa remise ou à son expiration ; cela n'efface ni votre liste de contacts, ni les copies de sauvegarde et journaux techniques décrits ici.</p>
           <p>Comme tout service en ligne, notre serveur reçoit l'adresse IP de votre appareil. Depuis le 14 octobre 2026, les requêtes ordinaires adressées au relais ne sont plus inscrites dans un journal d'accès ; les erreurs techniques, ainsi que des journaux antérieurs à cette date, peuvent comporter cette adresse.</p>
           <p>Aucun numéro, aucune adresse email ni aucun nom n'est demandé à l'inscription, et Orbal n'accède pas au carnet d'adresses de votre téléphone. Un pseudonyme peut toutefois être rapproché d'une adresse IP dans ces journaux techniques et, si vous vous abonnez, de l'identité du payeur connue de Stripe.</p>
+          <p>Ce que nous ne pouvons pas garder pour vous : vos douze mots, votre fiche de secours et son mot de passe. Nous ne pouvons ni ouvrir cette fiche ni retrouver ce mot de passe ; la fiche garde votre phrase, pas vos conversations. Quelqu'un qui obtiendrait votre phrase pourrait entrer dans votre compte : gardez-la secrète.</p>
+          <p>Certaines clés de vos conversations ne quittent pas votre téléphone, et une sauvegarde restaurée sur un autre appareil ne les rouvre pas. Retrouver votre compte ne garantit donc pas de retrouver les messages qui attendaient votre ancien téléphone. Garder l'application à jour vous fait profiter de sa protection la plus récente.</p>
         </Accordion>
 
         <Accordion title="Paiements">
