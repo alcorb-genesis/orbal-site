@@ -1,14 +1,17 @@
 // Politique de confidentialité courte (adresse historique /privacy.html). Le français est celui de l'ancienne
 // page HTML statique, mot pour mot, y compris son orthographe sans accents. L'anglais en est la traduction.
+// Section 11 (réclamations, 2 novembre 2026) : texte neuf, accentué, qui reprend mot pour mot la phrase de
+// transparence validée par Alexis (contenu/reclamation.js).
 
 const MAIL = <a href="mailto:alcorb.admin@proton.me">alcorb.admin@proton.me</a>;
+const FORMULAIRE = { fr: <a href="/reclamation">alcorb.app/reclamation</a>, en: <a href="/en/reclamation">alcorb.app/en/reclamation</a> };
 
 export const privacy = {
   fr: {
     titrePage: "Politique de confidentialite - Orbal par Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Politique de confidentialite",
-    maj: "Derniere mise a jour : 28 octobre 2026",
+    maj: "Derniere mise a jour : 2 novembre 2026",
     note: "Cette mise a jour decrit plus precisement la protection de vos messages et la recuperation de votre compte : retrouver votre compte ne garantit pas de retrouver les messages qui attendaient votre ancien telephone. Rien ne change pour les tarifs, les abonnements ni vos droits.",
     sections: [
       ["1. Responsable du traitement", <>
@@ -49,6 +52,7 @@ export const privacy = {
           <li>Messages remis : retires du relais des la livraison</li>
           <li>Messages non delivres : conserves chiffres au maximum 7 jours puis retires du relais</li>
           <li>Donnees de compte : conservees jusqu a la suppression du compte</li>
+          <li>Réclamations déposées sans courriel : voir la section 11</li>
           <li>Copies de sauvegarde et journaux techniques : ils peuvent contenir certaines de ces donnees (messages en attente chiffres, donnees de compte, adresses IP) au-dela des durees ci-dessus</li>
         </ul>
       </>],
@@ -60,6 +64,16 @@ export const privacy = {
       </>],
       ["10. Contact et reclamations", <>
         <p>Pour toute question : {MAIL}<br />En cas de reclamation non resolue : <a href="https://www.cnil.fr">CNIL - cnil.fr</a></p>
+        <p>Pour une réclamation sur Orbal (paiement, compte, accès…), vous pouvez aussi utiliser le formulaire sans courriel : {FORMULAIRE.fr} (section 11).</p>
+      </>],
+      ["11. Réclamations sans courriel", <>
+        <p>Vous pouvez déposer et suivre une réclamation sur {FORMULAIRE.fr}, sans compte Orbal, y compris si vous n’avez plus accès au vôtre. Pas d’identité civile ni de courriel exigés pour utiliser Orbal ou ouvrir une réclamation. Des vérifications proportionnées peuvent être nécessaires avant d’agir sur un compte ou un paiement. Le contenu de votre réclamation est lisible par Alcorb pour vous répondre ; il est distinct de vos conversations privées dans Orbal.</p>
+        <p>Ce qu’une réclamation contient : le motif, votre description, la solution souhaitée et, seulement si vous les indiquez, un pseudo et une référence de paiement ; puis les messages échangés et leurs dates. Le service garde un numéro de dossier et l’empreinte d’un code secret, jamais le code lui-même. Ni courriel, ni nom, ni téléphone ne sont demandés. N’y écrivez jamais de numéro de carte, de mot de passe, de code d’ouverture, de phrase de récupération ni le contenu de vos conversations.</p>
+        <p>Le code donne accès à ce dossier seulement (le lire, y écrire, le rouvrir) : il ne donne accès ni à un compte Orbal, ni à un paiement, ni à un droit à remboursement. Nous ne pouvons pas le retrouver ; s’il est perdu, vous pouvez ouvrir un nouveau dossier.</p>
+        <p>Les réclamations sont enregistrées sur le serveur du relais Orbal (Hetzner, Allemagne), dans une base distincte de celle de la messagerie. Les demandes ordinaires ne sont pas inscrites dans un journal d’accès ; l’adresse IP sert seulement, en mémoire et sous forme d’empreinte, à limiter les abus pendant une heure environ, et n’est pas enregistrée avec le dossier. Comme ailleurs, les erreurs techniques peuvent comporter cette adresse.</p>
+        <p>Conservation : une réclamation ordinaire est effacée entièrement 12 mois après sa clôture. Pour une réclamation qui touche un paiement, un abonnement ou un remboursement, son texte est effacé au même moment ; Alcorb garde seulement, à accès restreint et pendant 5 ans après la clôture, une courte synthèse factuelle (dates, objet, période payée, décision, montant et référence d’un remboursement effectué), pour pouvoir prouver ce qui a été décidé et ne pas oublier un remboursement déjà fait. En cas de litige ou d’obligation légale, l’effacement est suspendu le temps nécessaire, pour un motif noté. Les pièces comptables (paiements, factures) ne sont pas dans les réclamations : elles suivent leur propre circuit, conservé 10 ans selon les obligations comptables. Les copies de sauvegarde du serveur peuvent contenir ces données un peu au-delà.</p>
+        <p>Une synthèse n’est rattachée à un compte ou à un abonnement que par Alcorb, après une vérification faite par les moyens habituels : un pseudo écrit dans le formulaire ne suffit pas. Ces synthèses ne sont consultées que pour un motif précis, noté ; elles ne servent jamais à refuser automatiquement une demande, ni à tenir une liste noire, et rien n’est montré d’une réclamation à quelqu’un d’autre.</p>
+        <p>Ce parcours n’est pas une médiation de la consommation ; il ne réduit aucun de vos droits, notamment auprès de la CNIL (section 10).</p>
       </>],
     ],
     pied: "2026 Alcorb - ",
@@ -70,7 +84,7 @@ export const privacy = {
     titrePage: "Privacy policy - Orbal by Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Privacy policy",
-    maj: "Last updated: 28 October 2026",
+    maj: "Last updated: 2 November 2026",
     note: "This update describes more precisely how your messages are protected and how your account can be recovered: recovering your account does not guarantee recovering the messages that were waiting for your old phone. Nothing changes for prices, subscriptions or your rights. This English text is a translation of the French privacy policy.",
     sections: [
       ["1. Data controller", <>
@@ -111,6 +125,7 @@ export const privacy = {
           <li>Delivered messages: removed from the relay upon delivery</li>
           <li>Undelivered messages: kept encrypted for 7 days at most, then removed from the relay</li>
           <li>Account data: kept until the account is deleted</li>
+          <li>Complaints filed without email: see section 11</li>
           <li>Backup copies and technical logs: they may contain some of this data (encrypted pending messages, account data, IP addresses) beyond the periods above</li>
         </ul>
       </>],
@@ -122,6 +137,16 @@ export const privacy = {
       </>],
       ["10. Contact and complaints", <>
         <p>For any question: {MAIL}<br />If a complaint is not resolved: <a href="https://www.cnil.fr">CNIL - cnil.fr</a></p>
+        <p>For a complaint about Orbal (payment, account, access…), you can also use the form that needs no email address: {FORMULAIRE.en} (section 11).</p>
+      </>],
+      ["11. Complaints without email", <>
+        <p>You can file and follow a complaint at {FORMULAIRE.en}, without an Orbal account, including if you no longer have access to yours. No civil identity and no email address are required to use Orbal or to open a complaint. Proportionate checks may be needed before we act on an account or a payment. The content of your complaint can be read by Alcorb so that we can answer you; it is separate from your private conversations in Orbal.</p>
+        <p>What a complaint contains: the reason, your description, the solution you would like and, only if you give them, a pseudonym and a payment reference; then the messages exchanged and their dates. The service keeps a case number and a hash of a secret code, never the code itself. No email address, name or phone number is requested. Never write a card number, a password, an unlock code, a recovery phrase or the content of your conversations in it.</p>
+        <p>The code gives access to this case only (reading it, writing in it, reopening it): it gives no access to an Orbal account, to a payment or to any right to a refund. We cannot retrieve it; if it is lost, you can open a new case.</p>
+        <p>Complaints are stored on the Orbal relay server (Hetzner, Germany), in a database separate from the messaging one. Ordinary requests are not recorded in an access log; the IP address is used only in memory, as a hash, to limit abuse for about one hour, and is not stored with the case. As elsewhere, technical errors may include this address.</p>
+        <p>Retention: an ordinary complaint is deleted entirely 12 months after it is closed. For a complaint about a payment, a subscription or a refund, its text is deleted at the same time; Alcorb keeps only, with restricted access and for 5 years after closing, a short factual summary (dates, subject, period paid, decision, amount and reference of a refund actually made), so that what was decided can be proven and a refund already made is not forgotten. In case of a dispute or a legal obligation, deletion is suspended for as long as needed, for a recorded reason. Accounting records (payments, invoices) are not part of complaints: they follow their own process, kept for 10 years under accounting obligations. The server’s backup copies may contain this data for a little longer.</p>
+        <p>A summary is linked to an account or a subscription only by Alcorb, after a check made through the usual means: a pseudonym written in the form is not enough. These summaries are consulted only for a specific, recorded reason; they are never used to refuse a request automatically or to keep a blacklist, and nothing from one complaint is shown to anyone else.</p>
+        <p>This process is not consumer mediation; it does not reduce any of your rights, in particular with the CNIL (section 10).</p>
       </>],
     ],
     pied: "2026 Alcorb - ",
