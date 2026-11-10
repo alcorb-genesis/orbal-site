@@ -11,8 +11,8 @@ export const privacy = {
     titrePage: "Politique de confidentialite - Orbal par Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Politique de confidentialite",
-    maj: "Derniere mise a jour : 2 novembre 2026",
-    note: "Cette mise a jour decrit plus precisement la protection de vos messages et la recuperation de votre compte : retrouver votre compte ne garantit pas de retrouver les messages qui attendaient votre ancien telephone. Rien ne change pour les tarifs, les abonnements ni vos droits.",
+    maj: "Dernière mise à jour : 10 novembre 2026",
+    note: "Cette mise à jour accompagne la mise en service de la conservation légale prévue le 10 novembre 2026. Les règles de la section 12 prennent effet lors de cette activation. Le contenu de vos conversations reste chiffré sur vos appareils ; les durées des messages, les tarifs et les abonnements ne changent pas.",
     sections: [
       ["1. Responsable du traitement", <>
         <p>Alexis Bertrand - Entrepreneur Individuel (Alcorb) - SIRET 103 664 496 00017<br />200 rue Croix Nivert, 75015 Paris (HelloDom SAS)<br />Contact : {MAIL}</p>
@@ -27,7 +27,7 @@ export const privacy = {
           <li>Cles cryptographiques publiques (les cles privees restent sur votre appareil et ne sont pas transmises a nos serveurs)</li>
           <li>Contacts et blocages que vous etablissez dans Orbal, conserves sur nos serveurs pour le fonctionnement du service</li>
           <li>Donnees de paiement traitees exclusivement par Stripe ; la reference de votre abonnement et les droits qu il ouvre sont rattaches a votre compte, ce qui peut permettre de le rapprocher de l identite du payeur</li>
-          <li>Adresse IP de connexion : recue par le serveur comme pour tout service en ligne. Depuis le 14 octobre 2026, les requetes ordinaires adressees au relais ne sont plus inscrites dans un journal d acces ; les erreurs techniques, ainsi que des journaux anterieurs a cette date, peuvent comporter cette adresse</li>
+          <li>Informations techniques de connexion et de transmission : adresses IP, ports, dates, comptes concernés et identifiants techniques d’appareil disponibles. Leur conservation légale est distincte des journaux ordinaires du serveur ; voir la section 12.</li>
         </ul>
       </>],
       ["4. Ce que nous ne collectons pas", <>
@@ -51,9 +51,9 @@ export const privacy = {
         <ul>
           <li>Messages remis : retires du relais des la livraison</li>
           <li>Messages non delivres : conserves chiffres au maximum 7 jours puis retires du relais</li>
-          <li>Donnees de compte : conservees jusqu a la suppression du compte</li>
+          <li>Données de compte : utilisées pendant la vie du compte ; les archives légales après sa clôture sont décrites en section 12.</li>
           <li>Réclamations déposées sans courriel : voir la section 11</li>
-          <li>Copies de sauvegarde et journaux techniques : ils peuvent contenir certaines de ces donnees (messages en attente chiffres, donnees de compte, adresses IP) au-dela des durees ci-dessus</li>
+          <li>Sauvegardes du relais et du registre légal : copies chiffrées avec une cible de conservation de sept jours. Les copies peuvent contenir des données retirées du service jusqu’à leur propre purge. Diagnostics techniques : cible de sept jours ; authentification administrative : six mois. La cadence de nettoyage et les incidents éventuels peuvent introduire un décalage ; aucune disparition physique immédiate de toutes les copies n’est promise. Les sauvegardes du service de réclamations sont distinctes (section 11).</li>
         </ul>
       </>],
       ["8. Vos droits RGPD", <>
@@ -75,6 +75,12 @@ export const privacy = {
         <p>Une synthèse n’est rattachée à un compte ou à un abonnement que par Alcorb, après une vérification faite par les moyens habituels : un pseudo écrit dans le formulaire ne suffit pas. Ces synthèses ne sont consultées que pour un motif précis, noté ; elles ne servent jamais à refuser automatiquement une demande, ni à tenir une liste noire, et rien n’est montré d’une réclamation à quelqu’un d’autre.</p>
         <p>Ce parcours n’est pas une médiation de la consommation ; il ne réduit aucun de vos droits, notamment auprès de la CNIL (section 10).</p>
       </>],
+      ["12. Le secret de vos échanges et les traces techniques", <>
+        <p>Vos paroles restent les vôtres. Le contenu des conversations est chiffré sur vos appareils. Pour ses obligations légales, Alcorb conserve séparément certaines traces techniques : les identifiants des comptes qui échangent, les dates et les caractéristiques des transmissions, ainsi que les adresses IP, ports et identifiants techniques d’appareil disponibles lors des connexions. Ces traces peuvent révéler qu’un échange a eu lieu ; elles ne donnent pas à Alcorb la clé pour lire vos messages.</p>
+        <p>Les données de source de connexion sont conservées un an. Les données de trafic couvertes par une injonction légale sont conservées un an à compter du fait observé ; la poursuite de leur collecte dépend du texte applicable. Les informations nécessaires au compte et les références de paiement détenues pour ce service sont conservées pendant le service, puis un an après sa clôture. Les pièces comptables suivent leur durée propre. Si une conservation ciblée est valablement imposée, les seules données concernées restent préservées pendant la durée de la mesure.</p>
+        <p>L’inscription reste fondée sur un pseudo et un mot de passe, sans identité civile, courriel ni numéro de téléphone demandés. Orbal ne recueille pas votre position GPS pour ces parcours. Les paiements et les démarches administratives peuvent faire intervenir des informations distinctes pour leur propre finalité.</p>
+        <p>Ces archives sont réservées aux personnes habilitées chargées des obligations d’Alcorb. Elles peuvent être transmises à une autorité légalement compétente après vérification de sa demande. Elles ne servent ni à la publicité ni à la prospection. Leur conservation ne prolonge pas celle des messages ou des fichiers. Pour exercer vos droits, contactez {MAIL} ; une obligation légale ou la confidentialité d’une procédure peuvent limiter certains droits.</p>
+      </>],
     ],
     pied: "2026 Alcorb - ",
     site: "https://alcorb.app",
@@ -84,8 +90,8 @@ export const privacy = {
     titrePage: "Privacy policy - Orbal by Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Privacy policy",
-    maj: "Last updated: 2 November 2026",
-    note: "This update describes more precisely how your messages are protected and how your account can be recovered: recovering your account does not guarantee recovering the messages that were waiting for your old phone. Nothing changes for prices, subscriptions or your rights. This English text is a translation of the French privacy policy.",
+    maj: "Last updated: 10 November 2026",
+    note: "This update accompanies the activation of legal retention planned for 10 November 2026. The rules in section 12 take effect when that system is activated. Your conversation content remains encrypted on your devices; message lifetimes, prices and subscriptions do not change. This English text is a translation of the French privacy policy.",
     sections: [
       ["1. Data controller", <>
         <p>Alexis Bertrand - Entrepreneur Individuel (sole trader, Alcorb) - SIRET 103 664 496 00017<br />200 rue Croix Nivert, 75015 Paris (HelloDom SAS)<br />Contact: {MAIL}</p>
@@ -100,7 +106,7 @@ export const privacy = {
           <li>Public cryptographic keys (private keys stay on your device and are not sent to our servers)</li>
           <li>Contacts and blocks you set up in Orbal, kept on our servers for the service to work</li>
           <li>Payment data processed exclusively by Stripe; your subscription reference and the access it grants are attached to your account, which may make it possible to link it to the payer’s identity</li>
-          <li>Connection IP address: received by the server, as with any online service. Since 14 October 2026, ordinary requests sent to the relay are no longer recorded in an access log; technical errors, as well as logs from before that date, may include this address</li>
+          <li>Technical connection and transmission information: IP addresses, ports, dates, accounts involved and available technical device identifiers. Legal retention of these records is separate from ordinary server logs; see section 12.</li>
         </ul>
       </>],
       ["4. What we do not collect", <>
@@ -124,9 +130,9 @@ export const privacy = {
         <ul>
           <li>Delivered messages: removed from the relay upon delivery</li>
           <li>Undelivered messages: kept encrypted for 7 days at most, then removed from the relay</li>
-          <li>Account data: kept until the account is deleted</li>
+          <li>Account data: used while the account is active; legal archives after closure are described in section 12.</li>
           <li>Complaints filed without email: see section 11</li>
-          <li>Backup copies and technical logs: they may contain some of this data (encrypted pending messages, account data, IP addresses) beyond the periods above</li>
+          <li>Relay and legal-register backups: encrypted copies with a seven-day retention target. Copies may contain data removed from the live service until the copies themselves are purged. Technical diagnostics: seven-day target; administrative authentication: six months. Cleanup intervals and incidents may cause delays; immediate physical erasure of every copy is not promised. Complaint-service backups are separate (section 11).</li>
         </ul>
       </>],
       ["8. Your GDPR rights", <>
@@ -147,6 +153,12 @@ export const privacy = {
         <p>Retention: an ordinary complaint is deleted entirely 12 months after it is closed. For a complaint about a payment, a subscription or a refund, its text is deleted at the same time; Alcorb keeps only, with restricted access and for 5 years after closing, a short factual summary (dates, subject, period paid, decision, amount and reference of a refund actually made), so that what was decided can be proven and a refund already made is not forgotten. In case of a dispute or a legal obligation, deletion is suspended for as long as needed, for a recorded reason. Accounting records (payments, invoices) are not part of complaints: they follow their own process, kept for 10 years under accounting obligations. The server’s backup copies may contain this data for a little longer.</p>
         <p>A summary is linked to an account or a subscription only by Alcorb, after a check made through the usual means: a pseudonym written in the form is not enough. These summaries are consulted only for a specific, recorded reason; they are never used to refuse a request automatically or to keep a blacklist, and nothing from one complaint is shown to anyone else.</p>
         <p>This process is not consumer mediation; it does not reduce any of your rights, in particular with the CNIL (section 10).</p>
+      </>],
+      ["12. The privacy of your conversations and technical records", <>
+        <p>Your words remain yours. Conversation content is encrypted on your devices. To meet its legal obligations, Alcorb separately retains certain technical records: the identifiers of the accounts involved, dates and transmission characteristics, and the IP addresses, ports and technical device identifiers available at connection time. These records can show that an exchange took place; they do not give Alcorb the key to read your messages.</p>
+        <p>Connection-source records are retained for one year. Traffic records covered by a legal retention order are retained for one year from the recorded event; continued collection depends on the applicable legal instrument. Information needed for the account and payment references held for that service are retained during the service and for one year after closure. Accounting records follow their own retention period. If a valid targeted preservation requirement applies, only the relevant records are preserved for the duration of that measure.</p>
+        <p>Signing up still requires a username and a password, without requesting a civil identity, email address or telephone number. Orbal does not collect your GPS location for these functions. Payments and administrative procedures may involve separate information for their own purposes.</p>
+        <p>Access to these archives is restricted to authorised people responsible for Alcorb’s legal obligations. Records may be disclosed to a legally competent authority after its request has been checked. They are not used for advertising or prospecting. Retaining them does not extend the lifetime of messages or files. To exercise your rights, contact {MAIL}; a legal obligation or the confidentiality of proceedings may limit certain rights.</p>
       </>],
     ],
     pied: "2026 Alcorb - ",
