@@ -48,10 +48,11 @@ export const accueil = {
     },
     cgu: {
       titre: "Conditions Générales d'Utilisation",
-      maj: <>Version 1.3 du 28 octobre 2026 — Droit français applicable<br />Cette mise à jour décrit plus précisément la protection de vos messages et la récupération de votre compte : retrouver votre compte ne garantit pas de retrouver les messages qui attendaient votre ancien téléphone. Rien ne change pour les tarifs, les abonnements ni vos droits.</>,
+      maj: <>Version 1.4 du 16 novembre 2026 — Droit français applicable<br />L’article 1 précise désormais qu’Orbal est réservée aux personnes de 18 ans et plus. Les autres articles sont inchangés.</>,
       articles: [
         ["Article 1 — Objet et champ d'application", <>
           <p>Les présentes Conditions Générales d'Utilisation régissent l'utilisation du service de messagerie chiffrée Orbal, édité par Alexis Bertrand, Entrepreneur Individuel exerçant sous l'enseigne Alcorb, SIRET 103 664 496 00017, domicilié 200 rue Croix Nivert, 75015 Paris.</p>
+          <p>Orbal est réservée aux personnes âgées de 18 ans et plus. Vous devez avoir au moins 18 ans pour créer un compte et utiliser le service.</p>
           <p>En accédant au service, l'utilisateur reconnaît avoir pris connaissance des présentes conditions et les accepter. Elles peuvent évoluer ; l'utilisateur sera informé de tout changement substantiel.</p>
         </>],
         ["Article 2 — Description du service", <>
@@ -204,10 +205,11 @@ export const accueil = {
     },
     cgu: {
       titre: "Terms of Use",
-      maj: <>Version 1.3 of 28 October 2026 — Governed by French law<br />This update describes more precisely how your messages are protected and how your account can be recovered: recovering your account does not guarantee recovering the messages that were waiting for your old phone. Nothing changes for prices, subscriptions or your rights.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
+      maj: <>Version 1.4 of 16 November 2026 — Governed by French law<br />Article 1 now specifies that Orbal is for people aged 18 and over. The other articles are unchanged.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
       articles: [
         ["Article 1 — Purpose and scope", <>
           <p>These Terms of Use govern the use of the encrypted messaging service Orbal, published by Alexis Bertrand, Entrepreneur Individuel (sole trader) trading under the name Alcorb, SIRET 103 664 496 00017, domiciled at 200 rue Croix Nivert, 75015 Paris.</p>
+          <p>Orbal is for people aged 18 and over. You must be at least 18 to create an account and use the service.</p>
           <p>By accessing the service, the user acknowledges having read these terms and accepts them. They may change; the user will be informed of any substantial change.</p>
         </>],
         ["Article 2 — Description of the service", <>
