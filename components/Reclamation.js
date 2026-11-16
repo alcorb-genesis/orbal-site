@@ -106,6 +106,10 @@ export default function Reclamation({ lang }) {
         ) : (
           <>
             <p className="intro">{t.intro}</p>
+            <section className="encart" aria-labelledby="suppression-titre">
+              <h2 id="suppression-titre">{t.suppressionTitre}</h2>
+              <p>{t.suppression}</p>
+            </section>
             <Transparence t={t} />
             <p className="aide" style={{ marginBottom: "1.4rem" }}>{t.conservation}<a href={homologues("/privacy.html")[lang]}>{t.conservationLien}</a></p>
             <noscript><p className="alerte">{t.sansJs}</p></noscript>

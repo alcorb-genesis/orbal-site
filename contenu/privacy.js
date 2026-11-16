@@ -11,8 +11,8 @@ export const privacy = {
     titrePage: "Politique de confidentialite - Orbal par Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Politique de confidentialite",
-    maj: "Dernière mise à jour : 10 novembre 2026",
-    note: "Cette mise à jour accompagne la mise en service de la conservation légale prévue le 10 novembre 2026. Les règles de la section 12 prennent effet lors de cette activation. Le contenu de vos conversations reste chiffré sur vos appareils ; les durées des messages, les tarifs et les abonnements ne changent pas.",
+    maj: "Dernière mise à jour : 16 novembre 2026",
+    note: "La mise à jour du 16 novembre précise le rôle d’Expo pour les mises à jour et les notifications (section 6). La conservation légale de la section 12 est en service depuis le 10 novembre. Le contenu de vos conversations reste chiffré sur vos appareils ; les durées des messages, les tarifs et les abonnements ne changent pas.",
     sections: [
       ["1. Responsable du traitement", <>
         <p>Alexis Bertrand - Entrepreneur Individuel (Alcorb) - SIRET 103 664 496 00017<br />200 rue Croix Nivert, 75015 Paris (HelloDom SAS)<br />Contact : {MAIL}</p>
@@ -45,7 +45,9 @@ export const privacy = {
       </>],
       ["6. Infrastructure", <>
         <p>Serveurs du relais Orbal heberges en Union Europeenne, en Allemagne (Hetzner).</p>
-        <p>Certains prestataires interviennent en dehors de cette infrastructure, notamment Stripe pour les paiements et Expo pour les notifications. Ils traitent les donnees necessaires a leur fonction selon leurs propres conditions.</p>
+        <p>Certains prestataires interviennent en dehors de cette infrastructure, notamment Stripe pour les paiements et Expo pour les notifications et les mises à jour. Ils traitent les donnees necessaires a leur fonction selon leurs propres conditions.</p>
+        <p>Pour vous apporter les mises à jour et leurs correctifs, Orbal utilise aussi Expo. Ce service reçoit un identifiant aléatoire propre à l’installation, des informations de version et, lorsqu’un lancement échoue, des informations techniques sur cet échec. Comme toute requête réseau, ces échanges rendent aussi votre adresse IP visible au service. Ces données servent à distribuer les mises à jour et à en mesurer le bon fonctionnement. Orbal n’ajoute ni votre pseudo ni le texte de vos conversations aux paramètres de mise à jour. Les notifications utilisent un jeton technique et un avis générique. Vous pouvez refuser les notifications dans les réglages du téléphone ; ce choix ne désactive pas les vérifications de mise à jour.</p>
+        <p>Pour en savoir plus : <a href="https://expo.dev/privacy">politique de confidentialité d’Expo</a> et <a href="https://docs.expo.dev/eas-update/store-privacy-declarations/">données techniques des mises à jour Expo</a>.</p>
       </>],
       ["7. Duree de conservation", <>
         <ul>
@@ -90,8 +92,8 @@ export const privacy = {
     titrePage: "Privacy policy - Orbal by Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Privacy policy",
-    maj: "Last updated: 10 November 2026",
-    note: "This update accompanies the activation of legal retention planned for 10 November 2026. The rules in section 12 take effect when that system is activated. Your conversation content remains encrypted on your devices; message lifetimes, prices and subscriptions do not change. This English text is a translation of the French privacy policy.",
+    maj: "Last updated: 16 November 2026",
+    note: "The 16 November update clarifies Expo’s role in updates and notifications (section 6). Legal retention under section 12 has been in operation since 10 November. Your conversation content remains encrypted on your devices; message lifetimes, prices and subscriptions do not change. This English text is a translation of the French privacy policy.",
     sections: [
       ["1. Data controller", <>
         <p>Alexis Bertrand - Entrepreneur Individuel (sole trader, Alcorb) - SIRET 103 664 496 00017<br />200 rue Croix Nivert, 75015 Paris (HelloDom SAS)<br />Contact: {MAIL}</p>
@@ -124,7 +126,9 @@ export const privacy = {
       </>],
       ["6. Infrastructure", <>
         <p>Orbal relay servers hosted in the European Union, in Germany (Hetzner).</p>
-        <p>Some providers operate outside this infrastructure, in particular Stripe for payments and Expo for notifications. They process the data needed for their function under their own terms.</p>
+        <p>Some providers operate outside this infrastructure, in particular Stripe for payments and Expo for notifications and updates. They process the data needed for their function under their own terms.</p>
+        <p>Orbal also uses Expo to bring you updates and fixes. This service receives a random identifier for the installation, version information and, if a launch fails, technical information about the failure. As with any network request, these exchanges also make your IP address visible to the service. These details help deliver updates and measure whether they work. Orbal does not add your username or conversation text to update parameters. Notifications use a technical token and a generic notice. You can decline notifications in your phone’s settings; this does not turn off update checks.</p>
+        <p>Find out more: <a href="https://expo.dev/privacy">Expo’s privacy policy</a> and <a href="https://docs.expo.dev/eas-update/store-privacy-declarations/">technical data used by Expo updates</a>.</p>
       </>],
       ["7. Retention periods", <>
         <ul>

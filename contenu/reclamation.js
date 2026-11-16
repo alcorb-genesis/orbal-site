@@ -173,6 +173,8 @@ export const reclamation = {
     titrePage: "Réclamation — Orbal par Alcorb",
     titre: "Déposer une réclamation",
     intro: "Un souci de paiement, de compte ou d’accès ? Écrivez-nous ici, sans compte Orbal et sans courriel, même si vous n’avez plus accès à l’application. Vous recevrez un numéro de dossier et un code secret pour suivre notre réponse.",
+    suppressionTitre: "Supprimer votre compte Orbal",
+    suppression: "Vous souhaitez supprimer votre compte Orbal, même sans accès à l’application ? Choisissez « Données personnelles » et indiquez « Suppression du compte » dans votre demande. Précisez le pseudo concerné ; il ne suffit pas à prouver que le compte est le vôtre. Nous vous expliquerons dans ce dossier les vérifications nécessaires et les éventuelles données que la loi nous impose de conserver. Aucun mot de passe, code PIN ou mot de récupération ne doit être transmis ici.",
     aides: {
       description: "Les faits, avec les dates si possible.",
       solution: "Par exemple : un remboursement, une correction, une explication.",
@@ -224,6 +226,8 @@ export const reclamation = {
     titrePage: "Complaint — Orbal by Alcorb",
     titre: "File a complaint",
     intro: "A problem with a payment, your account or access? Write to us here, without an Orbal account and without an email address, even if you can no longer open the app. You will receive a case number and a secret code to follow our answer.",
+    suppressionTitre: "Delete your Orbal account",
+    suppression: "Want to delete your Orbal account, even if you cannot access the app? Choose ‘Personal data’ and write ‘Account deletion’ in your request. Give the username concerned; a username alone does not prove ownership. We will explain the necessary checks and any data we are legally required to retain through this case. Never send a password, unlock PIN or recovery words here.",
     aides: {
       description: "The facts, with dates if possible.",
       solution: "For example: a refund, a correction, an explanation.",
