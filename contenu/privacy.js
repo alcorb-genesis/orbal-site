@@ -11,7 +11,7 @@ export const privacy = {
     titrePage: "Politique de confidentialite - Orbal par Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Politique de confidentialite",
-    maj: "Dernière mise à jour : 16 novembre 2026",
+    maj: "Dernière mise à jour : 19 novembre 2026",
     note: "La mise à jour du 16 novembre précise le rôle d’Expo pour les mises à jour et les notifications (section 6). La conservation légale de la section 12 est en service depuis le 10 novembre. Le contenu de vos conversations reste chiffré sur vos appareils ; les durées des messages, les tarifs et les abonnements ne changent pas.",
     sections: [
       ["1. Responsable du traitement", <>
@@ -75,7 +75,7 @@ export const privacy = {
         <p>Les réclamations sont enregistrées sur le serveur du relais Orbal (Hetzner, Allemagne), dans une base distincte de celle de la messagerie. Les demandes ordinaires ne sont pas inscrites dans un journal d’accès ; l’adresse IP sert seulement, en mémoire et sous forme d’empreinte, à limiter les abus pendant une heure environ, et n’est pas enregistrée avec le dossier. Comme ailleurs, les erreurs techniques peuvent comporter cette adresse.</p>
         <p>Conservation : une réclamation ordinaire est effacée entièrement 12 mois après sa clôture. Pour une réclamation qui touche un paiement, un abonnement ou un remboursement, son texte est effacé au même moment ; Alcorb garde seulement, à accès restreint et pendant 5 ans après la clôture, une courte synthèse factuelle (dates, objet, période payée, décision, montant et référence d’un remboursement effectué), pour pouvoir prouver ce qui a été décidé et ne pas oublier un remboursement déjà fait. En cas de litige ou d’obligation légale, l’effacement est suspendu le temps nécessaire, pour un motif noté. Les pièces comptables (paiements, factures) ne sont pas dans les réclamations : elles suivent leur propre circuit, conservé 10 ans selon les obligations comptables. Les copies de sauvegarde du serveur peuvent contenir ces données un peu au-delà.</p>
         <p>Une synthèse n’est rattachée à un compte ou à un abonnement que par Alcorb, après une vérification faite par les moyens habituels : un pseudo écrit dans le formulaire ne suffit pas. Ces synthèses ne sont consultées que pour un motif précis, noté ; elles ne servent jamais à refuser automatiquement une demande, ni à tenir une liste noire, et rien n’est montré d’une réclamation à quelqu’un d’autre.</p>
-        <p>Ce parcours n’est pas une médiation de la consommation ; il ne réduit aucun de vos droits, notamment auprès de la CNIL (section 10).</p>
+        <p>Ce parcours auprès d’Alcorb est distinct de la médiation de la consommation. Vous pouvez consulter les <a href="/reclamation#mediation">coordonnées de CM2C et les modalités de saisine</a>. Il ne réduit aucun de vos droits, notamment auprès de la CNIL (section 10).</p>
       </>],
       ["12. Le secret de vos échanges et les traces techniques", <>
         <p>Vos paroles restent les vôtres. Le contenu des conversations est chiffré sur vos appareils. Pour ses obligations légales, Alcorb conserve séparément certaines traces techniques : les identifiants des comptes qui échangent, les dates et les caractéristiques des transmissions, ainsi que les adresses IP, ports et identifiants techniques d’appareil disponibles lors des connexions. Ces traces peuvent révéler qu’un échange a eu lieu ; elles ne donnent pas à Alcorb la clé pour lire vos messages.</p>
@@ -92,7 +92,7 @@ export const privacy = {
     titrePage: "Privacy policy - Orbal by Alcorb",
     sub: "Alcorb - Orbal",
     titre: "Privacy policy",
-    maj: "Last updated: 16 November 2026",
+    maj: "Last updated: 19 November 2026",
     note: "The 16 November update clarifies Expo’s role in updates and notifications (section 6). Legal retention under section 12 has been in operation since 10 November. Your conversation content remains encrypted on your devices; message lifetimes, prices and subscriptions do not change. This English text is a translation of the French privacy policy.",
     sections: [
       ["1. Data controller", <>
@@ -156,7 +156,7 @@ export const privacy = {
         <p>Complaints are stored on the Orbal relay server (Hetzner, Germany), in a database separate from the messaging one. Ordinary requests are not recorded in an access log; the IP address is used only in memory, as a hash, to limit abuse for about one hour, and is not stored with the case. As elsewhere, technical errors may include this address.</p>
         <p>Retention: an ordinary complaint is deleted entirely 12 months after it is closed. For a complaint about a payment, a subscription or a refund, its text is deleted at the same time; Alcorb keeps only, with restricted access and for 5 years after closing, a short factual summary (dates, subject, period paid, decision, amount and reference of a refund actually made), so that what was decided can be proven and a refund already made is not forgotten. In case of a dispute or a legal obligation, deletion is suspended for as long as needed, for a recorded reason. Accounting records (payments, invoices) are not part of complaints: they follow their own process, kept for 10 years under accounting obligations. The server’s backup copies may contain this data for a little longer.</p>
         <p>A summary is linked to an account or a subscription only by Alcorb, after a check made through the usual means: a pseudonym written in the form is not enough. These summaries are consulted only for a specific, recorded reason; they are never used to refuse a request automatically or to keep a blacklist, and nothing from one complaint is shown to anyone else.</p>
-        <p>This process is not consumer mediation; it does not reduce any of your rights, in particular with the CNIL (section 10).</p>
+        <p>This process with Alcorb is separate from consumer mediation. See <a href="/en/reclamation#mediation">CM2C’s contact details and how to apply</a>. It does not reduce any of your rights, in particular with the CNIL (section 10).</p>
       </>],
       ["12. The privacy of your conversations and technical records", <>
         <p>Your words remain yours. Conversation content is encrypted on your devices. To meet its legal obligations, Alcorb separately retains certain technical records: the identifiers of the accounts involved, dates and transmission characteristics, and the IP addresses, ports and technical device identifiers available at connection time. These records can show that an exchange took place; they do not give Alcorb the key to read your messages.</p>

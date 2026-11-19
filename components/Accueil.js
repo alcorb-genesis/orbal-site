@@ -1,3 +1,4 @@
+import { mediation } from "../contenu/mediation";
 import { useState } from "react";
 import ChoixLangue from "./ChoixLangue";
 import { accueil } from "../contenu/accueil";
@@ -193,7 +194,7 @@ export default function Accueil({ lang }) {
         <div className="marque serif">Orbal</div>
         <div>{t.pied.par}</div>
         <div style={{ marginTop: ".6rem" }}>
-          <a href="#cgu">{t.pied.cgu}</a> · <a href="#mentions-legales">{t.pied.mentions}</a> · <a href="#confidentialite">{t.pied.confidentialite}</a>
+          <a href="#cgu">{t.pied.cgu}</a> · <a href="#mentions-legales">{t.pied.mentions}</a> · <a href="#confidentialite">{t.pied.confidentialite}</a> · <a href={(lang === "fr" ? "/reclamation" : "/en/reclamation") + "#mediation"}>{mediation[lang].pied}</a>
         </div>
       </footer>
     </>

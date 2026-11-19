@@ -1,3 +1,4 @@
+import MediationConsommation from "./MediationConsommation";
 import { useEffect, useReducer, useRef, useState } from "react";
 import Head from "next/head";
 import ChoixLangue from "./ChoixLangue";
@@ -151,6 +152,9 @@ export default function Reclamation({ lang }) {
             <p className="aide" style={{ marginTop: "1.6rem" }}>{t.dejaDossier} <a href={suiviAdresse}>{t.suivreUn}</a></p>
           </>
         )}
+        <section className="bloc" id="mediation" aria-label={lang === "fr" ? "Médiation de la consommation" : "Consumer mediation"}>
+          <MediationConsommation lang={lang} titre />
+        </section>
         <p className="signature">{t.signature}</p>
       </main>
     </>

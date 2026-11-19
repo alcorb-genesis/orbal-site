@@ -1,3 +1,5 @@
+import MediationConsommation from "../components/MediationConsommation";
+
 // Textes de la page d'accueil, français et anglais côte à côte. Le français est celui déjà publié, mot pour mot ;
 // l'anglais en est la traduction. Montants, durées, coordonnées et références juridiques sont identiques.
 
@@ -48,7 +50,7 @@ export const accueil = {
     },
     cgu: {
       titre: "Conditions Générales d'Utilisation",
-      maj: <>Version 1.4 du 16 novembre 2026 — Droit français applicable<br />L’article 1 précise désormais qu’Orbal est réservée aux personnes de 18 ans et plus. Les autres articles sont inchangés.</>,
+      maj: <>Version 1.5 du 19 novembre 2026 — Droit français applicable<br />Ajout de l’article 9 sur les réclamations et la médiation de la consommation avec CM2C. Les articles 1 à 8 sont inchangés.</>,
       articles: [
         ["Article 1 — Objet et champ d'application", <>
           <p>Les présentes Conditions Générales d'Utilisation régissent l'utilisation du service de messagerie chiffrée Orbal, édité par Alexis Bertrand, Entrepreneur Individuel exerçant sous l'enseigne Alcorb, SIRET 103 664 496 00017, domicilié 200 rue Croix Nivert, 75015 Paris.</p>
@@ -105,6 +107,7 @@ export const accueil = {
           <p>En cas de fermeture du service, les utilisateurs seront informés quatre-vingt-dix jours à l'avance.</p>
           <p>Tout litige relatif aux présentes conditions est soumis au droit français.</p>
         </>],
+        ["Article 9 — Réclamations et médiation de la consommation", <MediationConsommation lang="fr" />],
       ],
     },
     mentions: {
@@ -125,6 +128,7 @@ export const accueil = {
         ["Propriété intellectuelle", <>
           <p>La marque Orbal, le logo corbeau et l'ensemble des contenus du service sont la propriété exclusive d'Alcorb. Toute reproduction sans autorisation constitue une contrefaçon au sens des articles L335-2 et suivants du Code de la propriété intellectuelle.</p>
         </>],
+        ["Médiation de la consommation", <MediationConsommation lang="fr" bref />],
       ],
     },
     confidentialite: {
@@ -205,7 +209,7 @@ export const accueil = {
     },
     cgu: {
       titre: "Terms of Use",
-      maj: <>Version 1.4 of 16 November 2026 — Governed by French law<br />Article 1 now specifies that Orbal is for people aged 18 and over. The other articles are unchanged.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
+      maj: <>Version 1.5 of 19 November 2026 — Governed by French law<br />Article 9 adds complaints and consumer mediation with CM2C. Articles 1 to 8 are unchanged.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
       articles: [
         ["Article 1 — Purpose and scope", <>
           <p>These Terms of Use govern the use of the encrypted messaging service Orbal, published by Alexis Bertrand, Entrepreneur Individuel (sole trader) trading under the name Alcorb, SIRET 103 664 496 00017, domiciled at 200 rue Croix Nivert, 75015 Paris.</p>
@@ -262,6 +266,7 @@ export const accueil = {
           <p>If the service closes, users will be informed ninety days in advance.</p>
           <p>Any dispute relating to these terms is governed by French law.</p>
         </>],
+        ["Article 9 — Complaints and consumer mediation", <MediationConsommation lang="en" />],
       ],
     },
     mentions: {
@@ -282,6 +287,7 @@ export const accueil = {
         ["Intellectual property", <>
           <p>The Orbal trademark, the raven logo and all the content of the service are the exclusive property of Alcorb. Any reproduction without authorisation constitutes infringement within the meaning of Articles L335-2 et seq. of the French Intellectual Property Code.</p>
         </>],
+        ["Consumer mediation", <MediationConsommation lang="en" bref />],
       ],
     },
     confidentialite: {

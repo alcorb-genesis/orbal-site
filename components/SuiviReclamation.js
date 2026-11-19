@@ -1,3 +1,4 @@
+import MediationConsommation from "./MediationConsommation";
 import { useEffect, useReducer, useRef } from "react";
 import Head from "next/head";
 import ChoixLangue from "./ChoixLangue";
@@ -149,6 +150,9 @@ export default function SuiviReclamation({ lang }) {
             </div>
           </section>
         )}
+        <section className="bloc" id="mediation" aria-label={lang === "fr" ? "Médiation de la consommation" : "Consumer mediation"}>
+          <MediationConsommation lang={lang} titre />
+        </section>
         <p className="signature">{t.signature}</p>
       </main>
     </>
