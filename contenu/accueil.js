@@ -36,7 +36,7 @@ export const accueil = {
         ["offre libre", "Gratuit", "0€", "Tous vos messages écrits"],
         ["offre", "Journée", "1€", "Tout pendant 24 heures, dans les limites techniques anti-abus"],
         ["offre", "Semaine", "3€", "Tout pendant 7 jours, dans les limites techniques anti-abus"],
-        ["offre phare", "Premium", "9,90€", "Par mois — ou 99€ l'année, deux mois offerts"],
+        ["offre phare", "Premium", "9,90€", "Par mois, sans engagement annuel"],
       ],
     },
     attente: {
@@ -50,7 +50,7 @@ export const accueil = {
     },
     cgu: {
       titre: "Conditions Générales d'Utilisation",
-      maj: <>Version 1.5 du 19 novembre 2026 — Droit français applicable<br />Ajout de l’article 9 sur les réclamations et la médiation de la consommation avec CM2C. Les articles 1 à 8 sont inchangés.</>,
+      maj: <>Version 1.6 du 21 novembre 2026 — Droit français applicable<br />Article 4 modifié : retrait de la formule annuelle. Les formules journée, semaine et mensuelle sont conservées.</>,
       articles: [
         ["Article 1 — Objet et champ d'application", <>
           <p>Les présentes Conditions Générales d'Utilisation régissent l'utilisation du service de messagerie chiffrée Orbal, édité par Alexis Bertrand, Entrepreneur Individuel exerçant sous l'enseigne Alcorb, SIRET 103 664 496 00017, domicilié 200 rue Croix Nivert, 75015 Paris.</p>
@@ -79,7 +79,6 @@ export const accueil = {
             <li>Journée : 1€ TTC — accès complet pendant 24 heures</li>
             <li>Semaine : 3€ TTC — accès complet pendant 7 jours</li>
             <li>Mensuel : 9,90€ TTC par mois, renouvelé automatiquement</li>
-            <li>Annuel : 99€ TTC par an, renouvelé automatiquement</li>
           </ul>
           <p>Les paiements sont traités par Stripe. Alcorb ne stocke aucune donnée bancaire et ne conserve aucun lien entre un paiement et le contenu des échanges. Les informations d'abonnement (référence de l'abonnement et droits ouverts) sont en revanche rattachées au compte de l'utilisateur.</p>
           <p>L'abonnement peut être résilié à tout moment ; l'accès reste ouvert jusqu'au terme de la période déjà payée. Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation ne s'applique pas aux services numériques dont l'exécution a commencé avec l'accord de l'utilisateur.</p>
@@ -195,7 +194,7 @@ export const accueil = {
         ["offre libre", "Free", "€0", "All your written messages"],
         ["offre", "Day", "€1", "Everything for 24 hours, within anti-abuse technical limits"],
         ["offre", "Week", "€3", "Everything for 7 days, within anti-abuse technical limits"],
-        ["offre phare", "Premium", "€9.90", "Per month — or €99 a year, two months free"],
+        ["offre phare", "Premium", "€9.90", "Per month, with no annual commitment"],
       ],
     },
     attente: {
@@ -209,7 +208,7 @@ export const accueil = {
     },
     cgu: {
       titre: "Terms of Use",
-      maj: <>Version 1.5 of 19 November 2026 — Governed by French law<br />Article 9 adds complaints and consumer mediation with CM2C. Articles 1 to 8 are unchanged.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
+      maj: <>Version 1.6 of 21 November 2026 — Governed by French law<br />Article 4 amended: the annual plan has been withdrawn. Daily, weekly and monthly plans remain available.<br />This English text is a translation of the French Terms of Use (Conditions Générales d’Utilisation).</>,
       articles: [
         ["Article 1 — Purpose and scope", <>
           <p>These Terms of Use govern the use of the encrypted messaging service Orbal, published by Alexis Bertrand, Entrepreneur Individuel (sole trader) trading under the name Alcorb, SIRET 103 664 496 00017, domiciled at 200 rue Croix Nivert, 75015 Paris.</p>
@@ -238,7 +237,6 @@ export const accueil = {
             <li>Day: €1 incl. VAT — full access for 24 hours</li>
             <li>Week: €3 incl. VAT — full access for 7 days</li>
             <li>Monthly: €9.90 incl. VAT per month, renewed automatically</li>
-            <li>Annual: €99 incl. VAT per year, renewed automatically</li>
           </ul>
           <p>Payments are processed by Stripe. Alcorb stores no bank data and keeps no link between a payment and the content of exchanges. Subscription information (subscription reference and access granted) is, however, attached to the user’s account.</p>
           <p>The subscription can be cancelled at any time; access remains open until the end of the period already paid for. In accordance with Article L221-28 of the French Consumer Code, the right of withdrawal does not apply to digital services whose performance has begun with the user’s agreement.</p>
